@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,282 +11,63 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --navy:   #0F2044;
-      --gold:   #D4A017;
-      --gold-lt:#FDF3D8;
-      --teal:   #1A6B5A;
-      --teal-lt:#E3F4F0;
-      --coral:  #C94F2C;
-      --coral-lt:#FAEAE5;
-      --slate:  #4A5568;
-      --mist:   #F5F7FA;
-      --line:   #E2E8F0;
-      --white:  #FFFFFF;
-      --text:   #1A202C;
-      --radius: 12px;
-      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      --navy:#0F2044; --gold:#D4A017; --teal:#1A6B5A; --teal-lt:#E3F4F0;
+      --coral:#C94F2C; --slate:#4A5568; --mist:#F5F7FA; --line:#E2E8F0;
+      --white:#FFFFFF; --text:#1A202C; --radius:12px;
     }
-
-    body {
-      font-family: 'DM Sans', system-ui, sans-serif;
-      font-size: 16px;
-      color: var(--text);
-      background: var(--mist);
-      line-height: 1.6;
-    }
-
-    /* ── Header ── */
-    header {
-      background: var(--navy);
-      color: white;
-      padding: 2.5rem 1.5rem 2rem;
-    }
-    .header-inner { max-width: 860px; margin: 0 auto; }
-    .header-eyebrow {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 0.6rem;
-    }
-    header h1 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: clamp(28px, 5vw, 42px);
-      font-weight: 400;
-      line-height: 1.15;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 16px;
-      color: rgba(255,255,255,0.72);
-      max-width: 520px;
-    }
-    .update-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      margin-top: 1.2rem;
-      font-size: 12px;
-      color: rgba(255,255,255,0.55);
-    }
-    .pulse {
-      width: 8px; height: 8px;
-      background: #4ADE80;
-      border-radius: 50%;
-      flex-shrink: 0;
-      animation: pulse 2.5s ease-in-out infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
-    }
-
-    /* ── Stats bar ── */
-    .stats-bar {
-      background: white;
-      border-bottom: 1px solid var(--line);
-    }
-    .stats-inner {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 1rem 1.5rem;
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .stat { display: flex; flex-direction: column; }
-    .stat-num {
-      font-size: 22px;
-      font-weight: 600;
-      color: var(--navy);
-      line-height: 1;
-    }
-    .stat-label { font-size: 12px; color: var(--slate); margin-top: 2px; }
-
-    /* ── Filters ── */
-    .filter-bar {
-      background: white;
-      border-bottom: 1px solid var(--line);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .filter-inner {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0.75rem 1.5rem;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .filter-label { font-size: 12px; color: var(--slate); margin-right: 4px; white-space: nowrap; }
-    .chip {
-      font-size: 13px;
-      font-weight: 500;
-      padding: 5px 14px;
-      border-radius: 999px;
-      border: 1.5px solid var(--line);
-      background: white;
-      color: var(--slate);
-      cursor: pointer;
-      transition: all 0.15s;
-      white-space: nowrap;
-    }
-    .chip:hover { border-color: var(--navy); color: var(--navy); }
-    .chip.active { background: var(--navy); color: white; border-color: var(--navy); }
-
-    /* ── Main layout ── */
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-
-    /* ── Section headers ── */
-    .section-head {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin: 1.5rem 0 0.75rem;
-    }
-    .section-head:first-child { margin-top: 0; }
-    .section-title {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--slate);
-    }
-    .section-line { flex: 1; height: 1px; background: var(--line); }
-
-    /* ── Cards ── */
-    .card {
-      background: white;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      padding: 1.25rem;
-      margin-bottom: 10px;
-      box-shadow: var(--shadow);
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
-    .card:hover {
-      border-color: #CBD5E0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 0.5rem;
-    }
-    .card-title {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--navy);
-      line-height: 1.3;
-    }
-    .amount {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--teal);
-      background: var(--teal-lt);
-      padding: 4px 12px;
-      border-radius: 999px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .card-desc {
-      font-size: 14px;
-      color: var(--slate);
-      line-height: 1.55;
-      margin-bottom: 0.85rem;
-    }
-    .card-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      margin-bottom: 0.85rem;
-    }
-    .tag {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 9px;
-      border-radius: 5px;
-      letter-spacing: 0.04em;
-    }
-    .tag-kansas { background: #EBF4FF; color: #1A56A0; }
-    .tag-national { background: #F3F0FF; color: #553C9A; }
-    .tag-stem { background: #E3F4F0; color: var(--teal); }
-    .tag-arts { background: #FDF3D8; color: #8A6000; }
-    .tag-firstgen { background: #FAEAE5; color: var(--coral); }
-    .tag-merit { background: #F0FFF4; color: #276749; }
-    .tag-need { background: #FFF5F5; color: #C53030; }
-    .tag-essay { background: #FAF5FF; color: #6B46C1; }
-    .deadline {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 12px;
-      font-weight: 500;
-    }
-    .deadline svg { width: 13px; height: 13px; flex-shrink: 0; }
-    .deadline-soon { color: var(--coral); }
-    .deadline-ok { color: var(--slate); }
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 0.85rem;
-      border-top: 1px solid var(--line);
-    }
-    .sponsor { font-size: 12px; color: #A0AEC0; }
-    .apply-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--navy);
-      text-decoration: none;
-      padding: 6px 14px;
-      border-radius: 8px;
-      border: 1.5px solid var(--navy);
-      transition: all 0.15s;
-    }
-    .apply-link:hover { background: var(--navy); color: white; }
-    .apply-link svg { width: 13px; height: 13px; }
-
-    /* ── Empty state ── */
-    .empty {
-      text-align: center;
-      padding: 3rem 1rem;
-      color: var(--slate);
-    }
-    .empty h3 { font-size: 18px; margin-bottom: 0.5rem; }
-    .empty p { font-size: 14px; }
-
-    /* ── Footer ── */
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 12px;
-      color: #A0AEC0;
-      margin-top: 2rem;
-    }
-    footer a { color: var(--slate); }
-
-    /* ── Responsive ── */
-    @media (max-width: 520px) {
-      .card-top { flex-direction: column; gap: 8px; }
-      .stats-inner { gap: 1.25rem; }
-    }
+    body { font-family:'DM Sans',system-ui,sans-serif; font-size:16px; color:var(--text); background:var(--mist); line-height:1.6; }
+    header { background:var(--navy); color:white; padding:2.5rem 1.5rem 2rem; }
+    .header-inner { max-width:860px; margin:0 auto; }
+    .header-eyebrow { font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem; }
+    header h1 { font-family:'DM Serif Display',Georgia,serif; font-size:clamp(28px,5vw,42px); font-weight:400; line-height:1.15; margin-bottom:0.5rem; }
+    header p { font-size:16px; color:rgba(255,255,255,0.72); max-width:520px; }
+    .update-badge { display:inline-flex; align-items:center; gap:7px; margin-top:1.2rem; font-size:12px; color:rgba(255,255,255,0.55); }
+    .pulse { width:8px; height:8px; background:#4ADE80; border-radius:50%; flex-shrink:0; animation:pulse 2.5s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    .stats-bar { background:white; border-bottom:1px solid var(--line); }
+    .stats-inner { max-width:860px; margin:0 auto; padding:1rem 1.5rem; display:flex; gap:2rem; flex-wrap:wrap; }
+    .stat { display:flex; flex-direction:column; }
+    .stat-num { font-size:22px; font-weight:600; color:var(--navy); line-height:1; }
+    .stat-label { font-size:12px; color:var(--slate); margin-top:2px; }
+    .filter-bar { background:white; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
+    .filter-inner { max-width:860px; margin:0 auto; padding:0.75rem 1.5rem; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .filter-label { font-size:12px; color:var(--slate); margin-right:4px; white-space:nowrap; }
+    .chip { font-size:13px; font-weight:500; padding:5px 14px; border-radius:999px; border:1.5px solid var(--line); background:white; color:var(--slate); cursor:pointer; transition:all 0.15s; white-space:nowrap; }
+    .chip:hover { border-color:var(--navy); color:var(--navy); }
+    .chip.active { background:var(--navy); color:white; border-color:var(--navy); }
+    main { max-width:860px; margin:0 auto; padding:1.5rem; }
+    .section-head { display:flex; align-items:center; gap:10px; margin:1.5rem 0 0.75rem; }
+    .section-head:first-child { margin-top:0; }
+    .section-title { font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--slate); }
+    .section-line { flex:1; height:1px; background:var(--line); }
+    .card { background:white; border-radius:var(--radius); border:1px solid var(--line); padding:1.25rem; margin-bottom:10px; box-shadow:0 1px 3px rgba(0,0,0,0.08); transition:border-color 0.15s,box-shadow 0.15s; }
+    .card:hover { border-color:#CBD5E0; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+    .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:0.5rem; }
+    .card-title { font-size:16px; font-weight:600; color:var(--navy); line-height:1.3; }
+    .amount { font-size:14px; font-weight:600; color:var(--teal); background:var(--teal-lt); padding:4px 12px; border-radius:999px; white-space:nowrap; flex-shrink:0; }
+    .card-desc { font-size:14px; color:var(--slate); line-height:1.55; margin-bottom:0.85rem; }
+    .card-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:0.85rem; }
+    .tag { font-size:11px; font-weight:600; padding:3px 9px; border-radius:5px; letter-spacing:0.04em; }
+    .tag-kansas { background:#EBF4FF; color:#1A56A0; }
+    .tag-national { background:#F3F0FF; color:#553C9A; }
+    .tag-stem { background:#E3F4F0; color:var(--teal); }
+    .tag-arts { background:#FDF3D8; color:#8A6000; }
+    .tag-firstgen { background:#FAEAE5; color:var(--coral); }
+    .tag-merit { background:#F0FFF4; color:#276749; }
+    .tag-need { background:#FFF5F5; color:#C53030; }
+    .deadline { display:flex; align-items:center; gap:5px; font-size:12px; font-weight:500; }
+    .deadline svg { width:13px; height:13px; flex-shrink:0; }
+    .deadline-soon { color:var(--coral); }
+    .deadline-ok { color:var(--slate); }
+    .card-footer { display:flex; justify-content:space-between; align-items:center; padding-top:0.85rem; border-top:1px solid var(--line); }
+    .sponsor { font-size:12px; color:#A0AEC0; }
+    .apply-link { display:inline-flex; align-items:center; gap:5px; font-size:13px; font-weight:600; color:var(--navy); text-decoration:none; padding:6px 14px; border-radius:8px; border:1.5px solid var(--navy); transition:all 0.15s; }
+    .apply-link:hover { background:var(--navy); color:white; }
+    .apply-link svg { width:13px; height:13px; }
+    .empty { text-align:center; padding:3rem 1rem; color:var(--slate); }
+    footer { border-top:1px solid var(--line); padding:1.5rem; text-align:center; font-size:12px; color:#A0AEC0; margin-top:2rem; }
+    @media(max-width:520px) { .card-top{flex-direction:column;gap:8px} .stats-inner{gap:1.25rem} }
   </style>
 </head>
 <body>
@@ -297,29 +79,17 @@
     <p>Scholarships and opportunities for high school students — Kansas and nationwide. Free to browse, updated every week.</p>
     <div class="update-badge">
       <span class="pulse"></span>
-      <span id="last-updated">Loading latest data...</span>
+      <span id="last-updated">Loading...</span>
     </div>
   </div>
 </header>
 
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat">
-      <span class="stat-num" id="stat-total">—</span>
-      <span class="stat-label">Open scholarships</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" id="stat-dollars">—</span>
-      <span class="stat-label">Total available</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" id="stat-kansas">—</span>
-      <span class="stat-label">Kansas-specific</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" id="stat-deadline">—</span>
-      <span class="stat-label">Closing this month</span>
-    </div>
+    <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Open scholarships</span></div>
+    <div class="stat"><span class="stat-num" id="stat-dollars">—</span><span class="stat-label">Total available</span></div>
+    <div class="stat"><span class="stat-num" id="stat-kansas">—</span><span class="stat-label">Kansas-specific</span></div>
+    <div class="stat"><span class="stat-num" id="stat-deadline">—</span><span class="stat-label">Closing this month</span></div>
   </div>
 </div>
 
@@ -336,11 +106,7 @@
   </div>
 </div>
 
-<main>
-  <div id="scholarships-container">
-    <p style="color: var(--slate); text-align: center; padding: 3rem 0;">Loading scholarships...</p>
-  </div>
-</main>
+<main><div id="scholarships-container"></div></main>
 
 <footer>
   <p>Updated every Monday at 7:00 AM CT &nbsp;·&nbsp; Data sourced from public scholarship databases</p>
@@ -348,159 +114,100 @@
 </footer>
 
 <script>
-  const clockSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
-  const linkSVG  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+const SCHOLARSHIP_DATA = {
+  "last_updated": "2026-06-23T07:00:00-05:00",
+  "scholarships": [
+    {"name":"Kansas State Scholarship","amount":"Up to $1,000/yr","description":"State-funded award for Kansas residents demonstrating financial need. Renewable for up to 4 years at accredited Kansas colleges and universities.","sponsor":"Kansas Board of Regents","deadline":"2026-07-01","tags":["kansas","need"],"url":"https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"},
+    {"name":"Coca-Cola Scholars Program","amount":"$20,000","description":"One of the most prestigious national scholarships for high school seniors. Merit-based, awarded to 150 students annually. Strong community leadership record required.","sponsor":"Coca-Cola Foundation","deadline":"2026-10-15","tags":["national","merit"],"url":"https://www.coca-colascholarsfoundation.org/apply/"},
+    {"name":"Gates Scholarship","amount":"Full cost of attendance","description":"Highly selective scholarship for exceptional minority students with significant financial need. Covers full cost of attendance at any U.S. college. Includes leadership development program.","sponsor":"Bill & Melinda Gates Foundation","deadline":"2026-09-01","tags":["national","need","firstgen"],"url":"https://www.thegatesscholarship.org/scholarship"},
+    {"name":"Kansas 4-H Foundation Scholarship","amount":"$1,000–$2,500","description":"For Kansas students who have been active 4-H members for at least 3 years. Preference given to students continuing involvement in agriculture or community development.","sponsor":"Kansas 4-H Foundation","deadline":"2027-02-01","tags":["kansas","merit"],"url":"https://kansas4hfoundation.org/scholarships/"},
+    {"name":"Horatio Alger National Scholarship","amount":"$25,000","description":"For students who have overcome great obstacles in their lives. Applicants must demonstrate integrity, perseverance, and financial need. One of the largest need-based scholarships in the country.","sponsor":"Horatio Alger Association","deadline":"2026-10-25","tags":["national","need","firstgen"],"url":"https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"},
+    {"name":"Burger King Scholars Program","amount":"Up to $50,000","description":"Open to high school seniors in the U.S. No minimum GPA required — focuses on community service and financial need. Very accessible application.","sponsor":"Burger King McLamore Foundation","deadline":"2026-12-15","tags":["national","need"],"url":"https://www.bkmclamorefoundation.org/apply"},
+    {"name":"Davidson Fellows Scholarship","amount":"$10,000–$50,000","description":"For students 18 and under who have completed a significant piece of work in science, technology, engineering, mathematics, literature, music, or philosophy.","sponsor":"Davidson Institute","deadline":"2027-02-11","tags":["national","stem","arts","merit"],"url":"https://www.davidsongifted.org/gifted-programs/fellows-scholarship/"},
+    {"name":"KCUR/Missouri Valley Journalism Scholarship","amount":"$2,000","description":"For Kansas and Missouri students pursuing journalism, communications, or media studies. Includes mentorship with KCUR public radio staff.","sponsor":"KCUR Public Media","deadline":"2027-01-31","tags":["kansas","arts"],"url":"https://www.kcur.org/"},
+    {"name":"Ron Brown Scholar Program","amount":"$40,000 (over 4 years)","description":"Academically gifted African American students who display exceptional leadership potential, participate in community service, and demonstrate financial need.","sponsor":"Ron Brown Scholar Fund","deadline":"2027-01-09","tags":["national","merit","need","firstgen"],"url":"https://www.ronbrown.org/section/apply/program-description"},
+    {"name":"Prudential Spirit of Community Award","amount":"$1,000 + trip to Washington D.C.","description":"Honors high school students for outstanding volunteer service. Each state selects two Distinguished Finalists who receive $1,000 each.","sponsor":"Prudential Financial","deadline":"2026-11-05","tags":["national","merit"],"url":"https://spirit.prudential.com/"},
+    {"name":"Kansas Ethnic Minority Scholarship","amount":"Up to $1,850/yr","description":"For academically talented minority students who are Kansas residents enrolled or planning to enroll at a Kansas postsecondary institution. Renewable award.","sponsor":"Kansas Board of Regents","deadline":"2027-04-01","tags":["kansas","need","firstgen"],"url":"https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"},
+    {"name":"Elks National Foundation Most Valuable Student","amount":"$4,000–$50,000","description":"One of the largest scholarship competitions in the country. Open to U.S. citizens in their final year of high school. Based on scholarship, leadership, and financial need.","sponsor":"Elks National Foundation","deadline":"2026-11-08","tags":["national","merit","need"],"url":"https://www.elks.org/scholars/scholarships/mvs.cfm"},
+    {"name":"Tylenol Future Care Scholarship","amount":"$5,000–$10,000","description":"For students pursuing a career in healthcare. Open to high school seniors and current college students. Strong community service record encouraged.","sponsor":"Tylenol / Johnson & Johnson","deadline":"2026-06-30","tags":["national","stem"],"url":"https://www.tylenol.com/news/scholarship"},
+    {"name":"Kansas City Royals Baseball Scholarship","amount":"$2,000","description":"For graduating high school seniors in the greater Kansas City area demonstrating academic achievement, financial need, and community involvement.","sponsor":"Kansas City Royals Charities","deadline":"2027-02-28","tags":["kansas","need"],"url":"https://www.mlb.com/royals/community/charities"},
+    {"name":"Scholly Search Scholarship","amount":"Varies","description":"Scholly matches students to hundreds of scholarships based on their background, interests, and goals. Free to search the database.","sponsor":"Scholly","deadline":"2026-12-31","tags":["national"],"url":"https://myscholly.com/"},
+    {"name":"Fastweb Scholarship Database","amount":"Varies","description":"One of the largest free scholarship search databases. Create a profile and get matched to scholarships you qualify for — updated continuously.","sponsor":"Fastweb","deadline":"2026-12-31","tags":["national"],"url":"https://www.fastweb.com/"},
+    {"name":"Hispanic Scholarship Fund","amount":"$500–$5,000","description":"For Hispanic students with a minimum 3.0 GPA pursuing a degree at an accredited U.S. college or university. Financial need is considered.","sponsor":"Hispanic Scholarship Fund","deadline":"2026-02-15","tags":["national","need","firstgen"],"url":"https://www.hsf.net/scholarship"},
+    {"name":"Dell Scholars Program","amount":"$20,000 + laptop + support","description":"For students who demonstrate the drive to succeed despite facing difficult circumstances. Includes ongoing support resources through college.","sponsor":"Michael & Susan Dell Foundation","deadline":"2026-12-01","tags":["national","need","firstgen"],"url":"https://www.dellscholars.org/scholarship/"}
+  ]
+};
 
-  let allScholarships = [];
-  let activeFilter = 'all';
+const clockSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+const linkSVG  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
 
-  function daysUntil(dateStr) {
-    const d = new Date(dateStr);
-    const now = new Date();
-    return Math.ceil((d - now) / (1000 * 60 * 60 * 24));
-  }
+let allScholarships = [];
+let activeFilter = 'all';
 
-  function formatDeadline(dateStr) {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  }
+function daysUntil(d) { return Math.ceil((new Date(d) - new Date()) / 86400000); }
+function formatDeadline(d) { return new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); }
 
-  function tagHTML(tags) {
-    const map = {
-      kansas: ['Kansas', 'tag-kansas'],
-      national: ['National', 'tag-national'],
-      stem: ['STEM', 'tag-stem'],
-      arts: ['Arts', 'tag-arts'],
-      firstgen: ['First-gen', 'tag-firstgen'],
-      merit: ['Merit', 'tag-merit'],
-      need: ['Need-based', 'tag-need'],
-      essay: ['Essay required', 'tag-essay'],
-    };
-    return (tags || []).map(t => {
-      const [label, cls] = map[t] || [t, 'tag-national'];
-      return `<span class="tag ${cls}">${label}</span>`;
-    }).join('');
-  }
+function tagHTML(tags) {
+  const map = {kansas:['Kansas','tag-kansas'],national:['National','tag-national'],stem:['STEM','tag-stem'],arts:['Arts','tag-arts'],firstgen:['First-gen','tag-firstgen'],merit:['Merit','tag-merit'],need:['Need-based','tag-need']};
+  return (tags||[]).map(t=>{ const [l,c]=map[t]||[t,'tag-national']; return `<span class="tag ${c}">${l}</span>`; }).join('');
+}
 
-  function renderCard(s) {
-    const days = daysUntil(s.deadline);
-    const soon = days <= 30;
-    const deadlineClass = soon ? 'deadline deadline-soon' : 'deadline deadline-ok';
-    const deadlineTxt = days < 0
-      ? 'Deadline passed'
-      : days === 0
-      ? 'Due today!'
-      : days <= 30
-      ? `${days} days left (${formatDeadline(s.deadline)})`
-      : `Deadline ${formatDeadline(s.deadline)}`;
+function renderCard(s) {
+  const days = daysUntil(s.deadline);
+  const soon = days <= 30;
+  const cls = soon ? 'deadline deadline-soon' : 'deadline deadline-ok';
+  const txt = days < 0 ? 'Deadline passed' : days === 0 ? 'Due today!' : soon ? `${days} days left (${formatDeadline(s.deadline)})` : `Deadline ${formatDeadline(s.deadline)}`;
+  return `<div class="card" data-tags="${(s.tags||[]).join(',')}">
+    <div class="card-top"><div class="card-title">${s.name}</div><span class="amount">${s.amount}</span></div>
+    <div class="card-desc">${s.description}</div>
+    <div class="card-meta"><span class="${cls}">${clockSVG} ${txt}</span>${tagHTML(s.tags)}</div>
+    <div class="card-footer"><span class="sponsor">${s.sponsor}</span><a class="apply-link" href="${s.url}" target="_blank" rel="noopener">Apply ${linkSVG}</a></div>
+  </div>`;
+}
 
-    return `
-      <div class="card" data-tags="${(s.tags||[]).join(',')}">
-        <div class="card-top">
-          <div class="card-title">${s.name}</div>
-          <span class="amount">${s.amount}</span>
-        </div>
-        <div class="card-desc">${s.description}</div>
-        <div class="card-meta">
-          <span class="${deadlineClass}">${clockSVG} ${deadlineTxt}</span>
-          ${tagHTML(s.tags)}
-        </div>
-        <div class="card-footer">
-          <span class="sponsor">${s.sponsor}</span>
-          <a class="apply-link" href="${s.url}" target="_blank" rel="noopener">
-            Apply ${linkSVG}
-          </a>
-        </div>
-      </div>`;
-  }
+function renderAll(scholarships) {
+  const el = document.getElementById('scholarships-container');
+  if (!scholarships.length) { el.innerHTML='<div class="empty"><h3>No scholarships match that filter</h3><p>Try selecting "All" to see everything.</p></div>'; return; }
+  const soon = scholarships.filter(s=>daysUntil(s.deadline)<=30&&daysUntil(s.deadline)>=0);
+  const upcoming = scholarships.filter(s=>daysUntil(s.deadline)>30);
+  let html = '';
+  if (soon.length) html += `<div class="section-head"><span class="section-title">Closing this month</span><span class="section-line"></span></div>${soon.map(renderCard).join('')}`;
+  if (upcoming.length) html += `<div class="section-head"><span class="section-title">Open &amp; upcoming</span><span class="section-line"></span></div>${upcoming.map(renderCard).join('')}`;
+  el.innerHTML = html;
+}
 
-  function renderAll(scholarships) {
-    const container = document.getElementById('scholarships-container');
-    if (!scholarships.length) {
-      container.innerHTML = `<div class="empty"><h3>No scholarships match that filter</h3><p>Try selecting "All" to see everything.</p></div>`;
-      return;
-    }
+function applyFilter(filter) {
+  activeFilter = filter;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===filter));
+  let filtered = allScholarships;
+  if (filter==='kansas') filtered=allScholarships.filter(s=>s.tags?.includes('kansas'));
+  if (filter==='national') filtered=allScholarships.filter(s=>s.tags?.includes('national'));
+  if (filter==='stem') filtered=allScholarships.filter(s=>s.tags?.includes('stem'));
+  if (filter==='arts') filtered=allScholarships.filter(s=>s.tags?.includes('arts'));
+  if (filter==='firstgen') filtered=allScholarships.filter(s=>s.tags?.includes('firstgen'));
+  if (filter==='soon') filtered=allScholarships.filter(s=>daysUntil(s.deadline)<=30&&daysUntil(s.deadline)>=0);
+  renderAll(filtered);
+}
 
-    const now = new Date();
-    const thisMonth = scholarships.filter(s => daysUntil(s.deadline) <= 30 && daysUntil(s.deadline) >= 0);
-    const upcoming  = scholarships.filter(s => daysUntil(s.deadline) > 30);
+function updateStats(scholarships) {
+  document.getElementById('stat-total').textContent = scholarships.length;
+  document.getElementById('stat-kansas').textContent = scholarships.filter(s=>s.tags?.includes('kansas')).length;
+  document.getElementById('stat-deadline').textContent = scholarships.filter(s=>daysUntil(s.deadline)<=30&&daysUntil(s.deadline)>=0).length;
+  let total = 0;
+  scholarships.forEach(s=>{ const m=s.amount.replace(/,/g,'').match(/\$?([\d]+)/); if(m) total+=parseInt(m[1]); });
+  const el = document.getElementById('stat-dollars');
+  el.textContent = total>999999 ? '$'+(total/1000000).toFixed(1)+'M+' : total>999 ? '$'+Math.round(total/1000)+'K+' : total?'$'+total:'—';
+}
 
-    let html = '';
-    if (thisMonth.length) {
-      html += `<div class="section-head"><span class="section-title">Closing this month</span><span class="section-line"></span></div>`;
-      html += thisMonth.map(renderCard).join('');
-    }
-    if (upcoming.length) {
-      html += `<div class="section-head"><span class="section-title">Open &amp; upcoming</span><span class="section-line"></span></div>`;
-      html += upcoming.map(renderCard).join('');
-    }
-    container.innerHTML = html;
-  }
+// Load data
+const data = SCHOLARSHIP_DATA;
+allScholarships = (data.scholarships||[]).filter(s=>daysUntil(s.deadline)>=0).sort((a,b)=>new Date(a.deadline)-new Date(b.deadline));
+const updated = new Date(data.last_updated);
+document.getElementById('last-updated').textContent = 'Updated '+updated.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+updateStats(allScholarships);
+applyFilter('all');
 
-  function applyFilter(filter) {
-    activeFilter = filter;
-    document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.filter === filter));
-
-    let filtered = allScholarships;
-    if (filter === 'kansas')  filtered = allScholarships.filter(s => s.tags?.includes('kansas'));
-    if (filter === 'national') filtered = allScholarships.filter(s => s.tags?.includes('national'));
-    if (filter === 'stem')    filtered = allScholarships.filter(s => s.tags?.includes('stem'));
-    if (filter === 'arts')    filtered = allScholarships.filter(s => s.tags?.includes('arts'));
-    if (filter === 'firstgen') filtered = allScholarships.filter(s => s.tags?.includes('firstgen'));
-    if (filter === 'soon')    filtered = allScholarships.filter(s => daysUntil(s.deadline) <= 30 && daysUntil(s.deadline) >= 0);
-
-    renderAll(filtered);
-  }
-
-  function updateStats(scholarships) {
-    const total = scholarships.length;
-    const kansas = scholarships.filter(s => s.tags?.includes('kansas')).length;
-    const soon = scholarships.filter(s => daysUntil(s.deadline) <= 30 && daysUntil(s.deadline) >= 0).length;
-
-    document.getElementById('stat-total').textContent = total;
-    document.getElementById('stat-kansas').textContent = kansas;
-    document.getElementById('stat-deadline').textContent = soon;
-
-    const dollarsEl = document.getElementById('stat-dollars');
-    // Compute rough total from amounts that are parseable
-    let totalDollars = 0;
-    scholarships.forEach(s => {
-      const match = s.amount.replace(/,/g, '').match(/\$?([\d]+)/);
-      if (match) totalDollars += parseInt(match[1]);
-    });
-    if (totalDollars > 999999) {
-      dollarsEl.textContent = '$' + (totalDollars / 1000000).toFixed(1) + 'M+';
-    } else if (totalDollars > 999) {
-      dollarsEl.textContent = '$' + Math.round(totalDollars / 1000) + 'K+';
-    } else {
-      dollarsEl.textContent = totalDollars ? '$' + totalDollars : '—';
-    }
-  }
-
-  async function loadScholarships() {
-    try {
-      const res = await fetch('scholarships.json');
-      const data = await res.json();
-      allScholarships = data.scholarships || [];
-
-      const updated = new Date(data.last_updated);
-      document.getElementById('last-updated').textContent =
-        'Updated ' + updated.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
-
-      updateStats(allScholarships);
-      applyFilter('all');
-    } catch (e) {
-      document.getElementById('scholarships-container').innerHTML =
-        `<div class="empty"><h3>Couldn't load scholarships</h3><p>Please try refreshing the page.</p></div>`;
-      document.getElementById('last-updated').textContent = 'Data unavailable';
-    }
-  }
-
-  document.querySelectorAll('.chip').forEach(chip => {
-    chip.addEventListener('click', () => applyFilter(chip.dataset.filter));
-  });
-
-  loadScholarships();
+document.querySelectorAll('.chip').forEach(chip=>chip.addEventListener('click',()=>applyFilter(chip.dataset.filter)));
 </script>
 </body>
 </html>
