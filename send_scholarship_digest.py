@@ -60,6 +60,7 @@ def fetch_scholarship_suggestions():
 
 
 def send_email(suggestions):
+    suggestions = suggestions.encode("ascii", "ignore").decode("ascii")
     gmail_user = "hannamickedu@gmail.com"
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     if not gmail_password:
