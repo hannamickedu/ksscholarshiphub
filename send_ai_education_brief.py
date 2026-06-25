@@ -49,6 +49,7 @@ def fetch_ai_education_news():
 
 
 def send_email(content):
+    content = content.encode("ascii", "ignore").decode("ascii")
     gmail_user = "hannamickedu@gmail.com"
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     if not gmail_password:
