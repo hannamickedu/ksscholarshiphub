@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-06-24T22:00:18.135124-05:00",
+  "last_updated": "2026-06-24T22:20:11.042372-05:00",
   "scholarships": [
+    {
+      "name": "Tylenol Future Care Scholarship",
+      "amount": "$5,000-$10,000",
+      "description": "For students pursuing a career in healthcare. Open to high school seniors and current college students. Strong community service record encouraged.",
+      "sponsor": "Tylenol / Johnson and Johnson",
+      "deadline": "2026-06-30",
+      "tags": [
+        "national",
+        "stem"
+      ],
+      "url": "https://www.tylenol.com/news/scholarship"
+    },
     {
       "name": "Kansas State Scholarship",
       "amount": "Up to $1,000/yr",
@@ -14,16 +26,145 @@
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
     },
     {
-      "name": "Tylenol Future Care Scholarship",
-      "amount": "$5,000-$10,000",
-      "description": "For students pursuing a career in healthcare. Open to high school seniors and current college students. Strong community service record encouraged.",
-      "sponsor": "Tylenol / Johnson and Johnson",
-      "deadline": "2026-06-30",
+      "name": "Kansas Farm Bureau Scholarship",
+      "amount": 1000,
+      "description": "Scholarship for Kansas high school seniors pursuing agriculture, agricultural business, or agricultural education at Kansas colleges and universities.",
+      "sponsor": "Kansas Farm Bureau",
+      "deadline": "2026-07-15",
+      "tags": [
+        "kansas",
+        "agriculture"
+      ],
+      "url": "https://www.kfb.org/about/scholarships"
+    },
+    {
+      "name": "The Christopherson Family Foundation Scholarship",
+      "amount": 4000,
+      "description": "For rural Kansas high school seniors pursuing science, technology, engineering, or mathematics fields at Kansas universities.",
+      "sponsor": "The Christopherson Family Foundation",
+      "deadline": "2026-07-20",
+      "tags": [
+        "kansas",
+        "stem",
+        "merit"
+      ],
+      "url": "https://www.christophersonfoundation.org/scholarships"
+    },
+    {
+      "name": "Young Farmers of Kansas Scholarship",
+      "amount": 1500,
+      "description": "Renewable scholarship for Kansas youth pursuing agriculture-related studies at Kansas postsecondary institutions.",
+      "sponsor": "Young Farmers of Kansas",
+      "deadline": "2026-07-31",
+      "tags": [
+        "kansas",
+        "agriculture"
+      ],
+      "url": "https://www.youngfarmersofkansas.org/scholarships"
+    },
+    {
+      "name": "Dane G. Hansen Foundation Scholarship",
+      "amount": 5000,
+      "description": "Scholarships available to graduates of Logan High School and other Logan County, Kansas high schools for undergraduate study.",
+      "sponsor": "Dane G. Hansen Foundation",
+      "deadline": "2026-08-01",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://www.danehansenfoundation.org/scholarships"
+    },
+    {
+      "name": "Kansas Future Teachers Scholarship",
+      "amount": 2500,
+      "description": "For Kansas high school seniors committed to teaching in Kansas schools, with preference for STEM education or special education.",
+      "sponsor": "Kansas Department of Education",
+      "deadline": "2026-08-15",
+      "tags": [
+        "kansas",
+        "stem",
+        "essay"
+      ],
+      "url": "https://www.ksde.org/Agency/Division-of-Learning-Services/Teacher-Licensure-and-Accreditation/Future-Teachers-Scholarship"
+    },
+    {
+      "name": "VolunteerKansas Civic Engagement Scholarship",
+      "amount": 3000,
+      "description": "Recognizes Kansas high school students demonstrating exceptional community service and leadership in their local communities.",
+      "sponsor": "VolunteerKansas",
+      "deadline": "2026-08-20",
+      "tags": [
+        "kansas",
+        "merit",
+        "essay"
+      ],
+      "url": "https://www.volunteerkansas.org/scholarships"
+    },
+    {
+      "name": "American Association of University Women - Kansas Scholarships",
+      "amount": 2500,
+      "description": "Support for women from Kansas pursuing higher education, with specific programs for first-generation and underrepresented students.",
+      "sponsor": "AAUW Kansas",
+      "deadline": "2026-08-31",
+      "tags": [
+        "kansas",
+        "firstgen",
+        "need"
+      ],
+      "url": "https://kansas.aauw.net/what-we-do/scholarships-and-grants"
+    },
+    {
+      "name": "Gates Scholarship",
+      "amount": "Full cost of attendance",
+      "description": "Highly selective scholarship for exceptional minority students with significant financial need. Covers full cost of attendance at any U.S. college.",
+      "sponsor": "Bill and Melinda Gates Foundation",
+      "deadline": "2026-09-01",
       "tags": [
         "national",
-        "stem"
+        "need",
+        "firstgen"
       ],
-      "url": "https://www.tylenol.com/news/scholarship"
+      "url": "https://www.thegatesscholarship.org/scholarship"
+    },
+    {
+      "name": "Sallie Mae First-Generation Scholarship",
+      "amount": 2500,
+      "description": "Scholarship for first-generation college students demonstrating financial need and leadership qualities.",
+      "sponsor": "Sallie Mae",
+      "deadline": "2026-09-15",
+      "tags": [
+        "national",
+        "firstgen",
+        "need",
+        "essay"
+      ],
+      "url": "https://www.salliemae.com/scholarships/first-generation-scholarship"
+    },
+    {
+      "name": "Claes Nobel Scholarship",
+      "amount": 2000,
+      "description": "For students demonstrating strong academic achievement and leadership in high school, with emphasis on social responsibility.",
+      "sponsor": "The Claes Nobel Foundation",
+      "deadline": "2026-09-30",
+      "tags": [
+        "national",
+        "merit",
+        "essay"
+      ],
+      "url": "https://www.claesnobelscholarship.org"
+    },
+    {
+      "name": "The Wise Kids Scholarship",
+      "amount": 5000,
+      "description": "For youth from rural communities pursuing higher education, with preference for first-generation students.",
+      "sponsor": "The Wise Kids Foundation",
+      "deadline": "2026-10-01",
+      "tags": [
+        "national",
+        "firstgen",
+        "need"
+      ],
+      "url": "https://www.thewisekids.org/scholarships"
     },
     {
       "name": "Coca-Cola Scholars Program",
@@ -40,7 +181,7 @@
     {
       "name": "Horatio Alger National Scholarship",
       "amount": "$25,000",
-      "description": "For students who have overcome great obstacles. Applicants must demonstrate integrity, perseverance, and financial need. One of the largest need-based scholarships in the country.",
+      "description": "For students who have overcome great obstacles. Applicants must demonstrate integrity, perseverance, and financial need.",
       "sponsor": "Horatio Alger Association",
       "deadline": "2026-10-25",
       "tags": [
@@ -76,17 +217,17 @@
       "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
     },
     {
-      "name": "Gates Scholarship",
-      "amount": "Full cost of attendance",
-      "description": "Highly selective scholarship for exceptional minority students with significant financial need. Covers full cost of attendance at any U.S. college.",
-      "sponsor": "Bill and Melinda Gates Foundation",
-      "deadline": "2026-09-01",
+      "name": "Dell Scholars Program",
+      "amount": "$20,000 plus laptop and support",
+      "description": "For students who demonstrate the drive to succeed despite facing difficult circumstances. Includes ongoing support resources through college.",
+      "sponsor": "Michael and Susan Dell Foundation",
+      "deadline": "2026-12-01",
       "tags": [
         "national",
         "need",
         "firstgen"
       ],
-      "url": "https://www.thegatesscholarship.org/scholarship"
+      "url": "https://www.dellscholars.org/scholarship/"
     },
     {
       "name": "Burger King Scholars Program",
@@ -99,19 +240,6 @@
         "need"
       ],
       "url": "https://www.bkmclamorefoundation.org/apply"
-    },
-    {
-      "name": "Dell Scholars Program",
-      "amount": "$20,000 plus laptop and support",
-      "description": "For students who demonstrate the drive to succeed despite facing difficult circumstances. Includes ongoing support resources through college.",
-      "sponsor": "Michael and Susan Dell Foundation",
-      "deadline": "2026-12-01",
-      "tags": [
-        "national",
-        "need",
-        "firstgen"
-      ],
-      "url": "https://www.dellscholars.org/scholarship/"
     },
     {
       "name": "Scholly Scholarship Search",
@@ -162,19 +290,6 @@
       "url": "https://www.kcur.org/"
     },
     {
-      "name": "Hispanic Scholarship Fund",
-      "amount": "$500-$5,000",
-      "description": "For Hispanic students with a minimum 3.0 GPA pursuing a degree at an accredited U.S. college or university. Financial need is considered.",
-      "sponsor": "Hispanic Scholarship Fund",
-      "deadline": "2027-02-15",
-      "tags": [
-        "national",
-        "need",
-        "firstgen"
-      ],
-      "url": "https://www.hsf.net/scholarship"
-    },
-    {
       "name": "Kansas 4-H Foundation Scholarship",
       "amount": "$1,000-$2,500",
       "description": "For Kansas students who have been active 4-H members for at least 3 years. Preference given to students continuing involvement in agriculture or community development.",
@@ -185,6 +300,18 @@
         "merit"
       ],
       "url": "https://kansas4hfoundation.org/scholarships/"
+    },
+    {
+      "name": "Kansas Grain and Feed Association Scholarship",
+      "amount": "$1,000",
+      "description": "For Kansas students pursuing degrees in agriculture, agribusiness, or related fields. Strong ties to Kansas farming communities encouraged.",
+      "sponsor": "Kansas Grain and Feed Association",
+      "deadline": "2027-02-01",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://www.kgfa.org/"
     },
     {
       "name": "Davidson Fellows Scholarship",
@@ -201,6 +328,19 @@
       "url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/"
     },
     {
+      "name": "Hispanic Scholarship Fund",
+      "amount": "$500-$5,000",
+      "description": "For Hispanic students with a minimum 3.0 GPA pursuing a degree at an accredited U.S. college or university. Financial need is considered.",
+      "sponsor": "Hispanic Scholarship Fund",
+      "deadline": "2027-02-15",
+      "tags": [
+        "national",
+        "need",
+        "firstgen"
+      ],
+      "url": "https://www.hsf.net/scholarship"
+    },
+    {
       "name": "Kansas City Royals Baseball Scholarship",
       "amount": "$2,000",
       "description": "For graduating high school seniors in the greater Kansas City area demonstrating academic achievement, financial need, and community involvement.",
@@ -211,6 +351,43 @@
         "need"
       ],
       "url": "https://www.mlb.com/royals/community/charities"
+    },
+    {
+      "name": "Sunflower Foundation Scholarship",
+      "amount": "$1,500",
+      "description": "For Kansas students pursuing careers in health professions. Supports students committed to serving rural and underserved Kansas communities.",
+      "sponsor": "Sunflower Foundation",
+      "deadline": "2027-02-28",
+      "tags": [
+        "kansas",
+        "stem",
+        "need"
+      ],
+      "url": "https://sunflowerfoundation.org/"
+    },
+    {
+      "name": "Kansas Rural Water Association Scholarship",
+      "amount": "$1,000",
+      "description": "Kansas-specific scholarship for students interested in water science, environmental engineering, or rural development. Open to Kansas high school seniors.",
+      "sponsor": "Kansas Rural Water Association",
+      "deadline": "2027-03-01",
+      "tags": [
+        "kansas",
+        "stem"
+      ],
+      "url": "https://www.krwa.net/"
+    },
+    {
+      "name": "Kansas Masonic Foundation Scholarship",
+      "amount": "$2,000",
+      "description": "For Kansas high school seniors with academic achievement and community involvement. Multiple awards given annually across the state.",
+      "sponsor": "Kansas Masonic Foundation",
+      "deadline": "2027-03-15",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://kansasmasons.org/"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
