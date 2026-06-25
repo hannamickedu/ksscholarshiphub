@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T22:20:11.042372-05:00",
+  "last_updated": "2026-06-24T22:22:52.370697-05:00",
   "scholarships": [
     {
       "name": "Tylenol Future Care Scholarship",
@@ -26,92 +26,41 @@
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
     },
     {
-      "name": "Kansas Farm Bureau Scholarship",
-      "amount": 1000,
-      "description": "Scholarship for Kansas high school seniors pursuing agriculture, agricultural business, or agricultural education at Kansas colleges and universities.",
-      "sponsor": "Kansas Farm Bureau",
-      "deadline": "2026-07-15",
-      "tags": [
-        "kansas",
-        "agriculture"
-      ],
-      "url": "https://www.kfb.org/about/scholarships"
-    },
-    {
-      "name": "The Christopherson Family Foundation Scholarship",
-      "amount": 4000,
-      "description": "For rural Kansas high school seniors pursuing science, technology, engineering, or mathematics fields at Kansas universities.",
-      "sponsor": "The Christopherson Family Foundation",
-      "deadline": "2026-07-20",
-      "tags": [
-        "kansas",
-        "stem",
-        "merit"
-      ],
-      "url": "https://www.christophersonfoundation.org/scholarships"
-    },
-    {
-      "name": "Young Farmers of Kansas Scholarship",
-      "amount": 1500,
-      "description": "Renewable scholarship for Kansas youth pursuing agriculture-related studies at Kansas postsecondary institutions.",
-      "sponsor": "Young Farmers of Kansas",
-      "deadline": "2026-07-31",
-      "tags": [
-        "kansas",
-        "agriculture"
-      ],
-      "url": "https://www.youngfarmersofkansas.org/scholarships"
-    },
-    {
-      "name": "Dane G. Hansen Foundation Scholarship",
-      "amount": 5000,
-      "description": "Scholarships available to graduates of Logan High School and other Logan County, Kansas high schools for undergraduate study.",
-      "sponsor": "Dane G. Hansen Foundation",
+      "name": "Inman Community Foundation Scholarship",
+      "amount": 500,
+      "description": "For graduates of Inman High School in McPherson County pursuing any field of study at accredited Kansas colleges or universities.",
+      "sponsor": "Inman Community Foundation",
       "deadline": "2026-08-01",
       "tags": [
         "kansas",
         "merit"
       ],
-      "url": "https://www.danehansenfoundation.org/scholarships"
+      "url": "https://www.inmankansas.org"
     },
     {
-      "name": "Kansas Future Teachers Scholarship",
-      "amount": 2500,
-      "description": "For Kansas high school seniors committed to teaching in Kansas schools, with preference for STEM education or special education.",
-      "sponsor": "Kansas Department of Education",
+      "name": "Kansas 4-H Alumni Scholarship",
+      "amount": 1000,
+      "description": "For Kansas high school seniors who participated in 4-H programs. Priority given to students continuing involvement in agricultural or STEM fields.",
+      "sponsor": "Kansas 4-H Foundation",
       "deadline": "2026-08-15",
       "tags": [
         "kansas",
-        "stem",
-        "essay"
-      ],
-      "url": "https://www.ksde.org/Agency/Division-of-Learning-Services/Teacher-Licensure-and-Accreditation/Future-Teachers-Scholarship"
-    },
-    {
-      "name": "VolunteerKansas Civic Engagement Scholarship",
-      "amount": 3000,
-      "description": "Recognizes Kansas high school students demonstrating exceptional community service and leadership in their local communities.",
-      "sponsor": "VolunteerKansas",
-      "deadline": "2026-08-20",
-      "tags": [
-        "kansas",
         "merit",
-        "essay"
+        "stem"
       ],
-      "url": "https://www.volunteerkansas.org/scholarships"
+      "url": "https://www.kansas4h.org"
     },
     {
-      "name": "American Association of University Women - Kansas Scholarships",
+      "name": "Kansas Agricultural Leadership Program Scholarship",
       "amount": 2500,
-      "description": "Support for women from Kansas pursuing higher education, with specific programs for first-generation and underrepresented students.",
-      "sponsor": "AAUW Kansas",
+      "description": "Scholarships for Kansas high school students pursuing agriculture, agricultural business, or agricultural education. Preference given to students from farming families demonstrating leadership potential.",
+      "sponsor": "Kansas Farm Bureau Foundation",
       "deadline": "2026-08-31",
       "tags": [
         "kansas",
-        "firstgen",
-        "need"
+        "merit"
       ],
-      "url": "https://kansas.aauw.net/what-we-do/scholarships-and-grants"
+      "url": "https://www.kfb.org/about/foundation"
     },
     {
       "name": "Gates Scholarship",
@@ -127,44 +76,56 @@
       "url": "https://www.thegatesscholarship.org/scholarship"
     },
     {
-      "name": "Sallie Mae First-Generation Scholarship",
-      "amount": 2500,
-      "description": "Scholarship for first-generation college students demonstrating financial need and leadership qualities.",
-      "sponsor": "Sallie Mae",
-      "deadline": "2026-09-15",
+      "name": "Kansas Music Teachers Association Scholarship",
+      "amount": 1500,
+      "description": "For Kansas high school students demonstrating exceptional musical talent and planning to pursue music in college. Applicants must perform or submit recordings of performances.",
+      "sponsor": "Kansas Music Teachers Association",
+      "deadline": "2026-09-01",
       "tags": [
-        "national",
-        "firstgen",
-        "need",
-        "essay"
+        "kansas",
+        "arts",
+        "merit"
       ],
-      "url": "https://www.salliemae.com/scholarships/first-generation-scholarship"
+      "url": "https://kmta.org"
     },
     {
-      "name": "Claes Nobel Scholarship",
-      "amount": 2000,
-      "description": "For students demonstrating strong academic achievement and leadership in high school, with emphasis on social responsibility.",
-      "sponsor": "The Claes Nobel Foundation",
-      "deadline": "2026-09-30",
+      "name": "Salina Community Foundation Scholarships",
+      "amount": 1000,
+      "description": "Multiple scholarships available for Salina-area high school graduates attending Kansas colleges. Various award categories including general merit, need-based, and specific field scholarships.",
+      "sponsor": "Salina Community Foundation",
+      "deadline": "2026-09-15",
+      "tags": [
+        "kansas",
+        "merit",
+        "need"
+      ],
+      "url": "https://www.salinafoundation.org"
+    },
+    {
+      "name": "National Community Service Scholarship Award",
+      "amount": 4000,
+      "description": "Recognizes high school seniors with demonstrated commitment to volunteer service and community leadership. Essay required explaining service impact and future goals.",
+      "sponsor": "American Association of Community Colleges",
+      "deadline": "2026-09-20",
       "tags": [
         "national",
         "merit",
         "essay"
       ],
-      "url": "https://www.claesnobelscholarship.org"
+      "url": "https://www.aacc.nche.edu"
     },
     {
-      "name": "The Wise Kids Scholarship",
-      "amount": 5000,
-      "description": "For youth from rural communities pursuing higher education, with preference for first-generation students.",
-      "sponsor": "The Wise Kids Foundation",
-      "deadline": "2026-10-01",
+      "name": "First Generation Foundation Scholarship",
+      "amount": 3000,
+      "description": "Exclusive scholarship for first-generation college students. Awards based on academic performance, community service, and essay demonstrating determination to succeed.",
+      "sponsor": "First Generation Foundation",
+      "deadline": "2026-09-30",
       "tags": [
         "national",
         "firstgen",
-        "need"
+        "essay"
       ],
-      "url": "https://www.thewisekids.org/scholarships"
+      "url": "https://www.firstgenerationfoundation.org"
     },
     {
       "name": "Coca-Cola Scholars Program",
@@ -179,6 +140,19 @@
       "url": "https://www.coca-colascholarsfoundation.org/apply/"
     },
     {
+      "name": "National Association of Geoscience Teachers Scholarships",
+      "amount": 5000,
+      "description": "Scholarships for high school students planning to study geology, earth science, or related STEM fields. Recognizes academic excellence and commitment to earth science education.",
+      "sponsor": "National Association of Geoscience Teachers",
+      "deadline": "2026-10-15",
+      "tags": [
+        "national",
+        "stem",
+        "merit"
+      ],
+      "url": "https://nagt.org"
+    },
+    {
       "name": "Horatio Alger National Scholarship",
       "amount": "$25,000",
       "description": "For students who have overcome great obstacles. Applicants must demonstrate integrity, perseverance, and financial need.",
@@ -190,6 +164,18 @@
         "firstgen"
       ],
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
+    },
+    {
+      "name": "National Volunteer Fire Council Scholarship",
+      "amount": 2000,
+      "description": "Scholarships for high school students whose parents or guardians are volunteer firefighters. Recognizes community service and family commitment to emergency services.",
+      "sponsor": "National Volunteer Fire Council",
+      "deadline": "2026-10-30",
+      "tags": [
+        "national",
+        "merit"
+      ],
+      "url": "https://nvfc.org"
     },
     {
       "name": "Prudential Spirit of Community Award",
