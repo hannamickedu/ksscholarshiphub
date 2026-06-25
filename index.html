@@ -87,7 +87,7 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Open scholarships</span></div>
-    <div class="stat"><span class="stat-num" id="stat-dollars">—</span><span class="stat-label">Dollars available</span></div>
+    <div class="stat"><span class="stat-num" id="stat-dollars">—</span><span class="stat-label">Award range</span></div>
     <div class="stat"><span class="stat-num" id="stat-kansas">—</span><span class="stat-label">Kansas-specific</span></div>
     <div class="stat"><span class="stat-num" id="stat-deadline">—</span><span class="stat-label">Closing this month</span></div>
   </div>
@@ -170,22 +170,25 @@ function updateStats(scholarships) {
   document.getElementById('stat-total').textContent = scholarships.length;
   document.getElementById('stat-kansas').textContent = scholarships.filter(function(s){return s.tags&&s.tags.indexOf('kansas')>-1;}).length;
   document.getElementById('stat-deadline').textContent = scholarships.filter(function(s){return daysUntil(s.deadline)<=30&&daysUntil(s.deadline)>=0;}).length;
-  // Count scholarships with parseable dollar amounts
-  var count = 0;
+  // Find min and max dollar amounts across all scholarships
+  var amounts = [];
   scholarships.forEach(function(s){
-    var m = s.amount.replace(/,/g,'').match(/\$?([\d]+)/);
-    if(m) count++;
+    var matches = s.amount.replace(/,/g,'').match(/\d+/g);
+    if (matches) matches.forEach(function(n){ amounts.push(parseInt(n)); });
   });
-  document.getElementById('stat-dollars').textContent = count + ' with set amounts';
+  if (amounts.length) {
+    var mn = Math.min.apply(null, amounts);
+    var mx = Math.max.apply(null, amounts);
+    var fmt = function(n){ return n >= 1000 ? '$' + Math.round(n/1000) + 'K' : '$' + n; };
+    document.getElementById('stat-dollars').textContent = fmt(mn) + ' – ' + fmt(mx);
+  } else {
+    document.getElementById('stat-dollars').textContent = 'Varies';
+  }
 }
 
 function loadData() {
-  var url = 'scholarships.json?nocache=' + Date.now();
-  fetch(url)
-    .then(function(r){
-      if (!r.ok) throw new Error('Network error');
-      return r.json();
-    })
+  fetch('scholarships.json?nocache=' + Date.now())
+    .then(function(r){ if (!r.ok) throw new Error('Network error'); return r.json(); })
     .then(function(data) {
       allScholarships = (data.scholarships||[]).filter(function(s){return daysUntil(s.deadline)>=0;}).sort(function(a,b){return new Date(a.deadline)-new Date(b.deadline);});
       var updated = new Date(data.last_updated);
@@ -193,8 +196,7 @@ function loadData() {
       updateStats(allScholarships);
       applyFilter('all');
     })
-    .catch(function(err) {
-      console.log('Fetch error:', err);
+    .catch(function() {
       document.getElementById('last-updated').textContent = 'Updated weekly every Monday';
       document.getElementById('scholarships-container').innerHTML = '<div class="empty"><h3>Could not load scholarships</h3><p>Please try refreshing the page.</p></div>';
     });
