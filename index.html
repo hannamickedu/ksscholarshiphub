@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scholarship Hub — Kansas High School Students</title>
+  <meta name="description" content="Free scholarships and opportunities for Kansas high school students. Updated every Monday." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0F2044;
+      --gold:   #D4A017;
+      --gold-lt:#FDF3D8;
+      --teal:   #1A6B5A;
+      --teal-lt:#E3F4F0;
+      --coral:  #C94F2C;
+      --coral-lt:#FAEAE5;
+      --slate:  #4A5568;
+      --mist:   #F5F7FA;
+      --line:   #E2E8F0;
+      --white:  #FFFFFF;
+      --text:   #1A202C;
+      --radius: 12px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 16px;
+      color: var(--text);
+      background: var(--mist);
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 2.5rem 1.5rem 2rem;
+    }
+    .header-inner { max-width: 860px; margin: 0 auto; }
+    .header-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+    header h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      max-width: 520px;
+    }
+    .update-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 1.2rem;
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+    }
+    .pulse {
+      width: 8px; height: 8px;
+      background: #4ADE80;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      background: white;
+      border-bottom: 1px solid var(--line);
+    }
+    .stats-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .stat { display: flex; flex-direction: column; }
+    .stat-num {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat-label { font-size: 12px; color: var(--slate); margin-top: 2px; }
+
+    /* ── Filters ── */
+    .filter-bar {
+      background: white;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .filter-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filter-label { font-size: 12px; color: var(--slate); margin-right: 4px; white-space: nowrap; }
+    .chip {
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--line);
+      background: white;
+      color: var(--slate);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .chip:hover { border-color: var(--navy); color: var(--navy); }
+    .chip.active { background: var(--navy); color: white; border-color: var(--navy); }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    /* ── Section headers ── */
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 1.5rem 0 0.75rem;
+    }
+    .section-head:first-child { margin-top: 0; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--slate);
+    }
+    .section-line { flex: 1; height: 1px; background: var(--line); }
+
+    /* ── Cards ── */
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      padding: 1.25rem;
+      margin-bottom: 10px;
+      box-shadow: var(--shadow);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .card:hover {
+      border-color: #CBD5E0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 0.5rem;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+    .amount {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--teal);
+      background: var(--teal-lt);
+      padding: 4px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: var(--slate);
+      line-height: 1.55;
+      margin-bottom: 0.85rem;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 0.85rem;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 5px;
+      letter-spacing: 0.04em;
+    }
+    .tag-kansas { background: #EBF4FF; color: #1A56A0; }
+    .tag-national { background: #F3F0FF; color: #553C9A; }
+    .tag-stem { background: #E3F4F0; color: var(--teal); }
+    .tag-arts { background: #FDF3D8; color: #8A6000; }
+    .tag-firstgen { background: #FAEAE5; color: var(--coral); }
+    .tag-merit { background: #F0FFF4; color: #276749; }
+    .tag-need { background: #FFF5F5; color: #C53030; }
+    .tag-essay { background: #FAF5FF; color: #6B46C1; }
+    .deadline {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .deadline svg { width: 13px; height: 13px; flex-shrink: 0; }
+    .deadline-soon { color: var(--coral); }
+    .deadline-ok { color: var(--slate); }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--line);
+    }
+    .sponsor { font-size: 12px; color: #A0AEC0; }
+    .apply-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1.5px solid var(--navy);
+      transition: all 0.15s;
+    }
+    .apply-link:hover { background: var(--navy); color: white; }
+    .apply-link svg { width: 13px; height: 13px; }
+
+    /* ── Empty state ── */
+    .empty {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--slate);
+    }
+    .empty h3 { font-size: 18px; margin-bottom: 0.5rem; }
+    .empty p { font-size: 14px; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 12px;
+      color: #A0AEC0;
+      margin-top: 2rem;
+    }
+    footer a { color: var(--slate); }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .card-top { flex-direction: column; gap: 8px; }
+      .stats-inner { gap: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-eyebrow">Kansas Scholarship Hub</div>
+    <h1>Your money<br>is out there.</h1>
+    <p>Scholarships and opportunities for high school students — Kansas and nationwide. Free to browse, updated every week.</p>
+    <div class="update-badge">
+      <span class="pulse"></span>
+      <span id="last-updated">Loading latest data...</span>
+    </div>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat">
+      <span class="stat-num" id="stat-total">—</span>
+      <span class="stat-label">Open scholarships</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" id="stat-dollars">—</span>
+      <span class="stat-label">Total available</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" id="stat-kansas">—</span>
+      <span class="stat-label">Kansas-specific</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" id="stat-deadline">—</span>
+      <span class="stat-label">Closing this month</span>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-inner">
+    <span class="filter-label">Filter:</span>
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="kansas">Kansas only</button>
+    <button class="chip" data-filter="national">National</button>
+    <button class="chip" data-filter="stem">STEM</button>
+    <button class="chip" data-filter="arts">Arts</button>
+    <button class="chip" data-filter="firstgen">First-gen</button>
+    <button class="chip" data-filter="soon">Closing soon</button>
+  </div>
+</div>
+
+<main>
+  <div id="scholarships-container">
+    <p style="color: var(--slate); text-align: center; padding: 3rem 0;">Loading scholarships...</p>
+  </div>
+</main>
+
+<footer>
+  <p>Updated every Monday at 7:00 AM CT &nbsp;·&nbsp; Data sourced from public scholarship databases</p>
+  <p style="margin-top:6px;">Built for Kansas high school students &nbsp;·&nbsp; Always free</p>
+</footer>
+
+<script>
+  const clockSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+  const linkSVG  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+
+  let allScholarships = [];
+  let activeFilter = 'all';
+
+  function daysUntil(dateStr) {
+    const d = new Date(dateStr);
+    const now = new Date();
+    return Math.ceil((d - now) / (1000 * 60 * 60 * 24));
+  }
+
+  function formatDeadline(dateStr) {
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  function tagHTML(tags) {
+    const map = {
+      kansas: ['Kansas', 'tag-kansas'],
+      national: ['National', 'tag-national'],
+      stem: ['STEM', 'tag-stem'],
+      arts: ['Arts', 'tag-arts'],
+      firstgen: ['First-gen', 'tag-firstgen'],
+      merit: ['Merit', 'tag-merit'],
+      need: ['Need-based', 'tag-need'],
+      essay: ['Essay required', 'tag-essay'],
+    };
+    return (tags || []).map(t => {
+      const [label, cls] = map[t] || [t, 'tag-national'];
+      return `<span class="tag ${cls}">${label}</span>`;
+    }).join('');
+  }
+
+  function renderCard(s) {
+    const days = daysUntil(s.deadline);
+    const soon = days <= 30;
+    const deadlineClass = soon ? 'deadline deadline-soon' : 'deadline deadline-ok';
+    const deadlineTxt = days < 0
+      ? 'Deadline passed'
+      : days === 0
+      ? 'Due today!'
+      : days <= 30
+      ? `${days} days left (${formatDeadline(s.deadline)})`
+      : `Deadline ${formatDeadline(s.deadline)}`;
+
+    return `
+      <div class="card" data-tags="${(s.tags||[]).join(',')}">
+        <div class="card-top">
+          <div class="card-title">${s.name}</div>
+          <span class="amount">${s.amount}</span>
+        </div>
+        <div class="card-desc">${s.description}</div>
+        <div class="card-meta">
+          <span class="${deadlineClass}">${clockSVG} ${deadlineTxt}</span>
+          ${tagHTML(s.tags)}
+        </div>
+        <div class="card-footer">
+          <span class="sponsor">${s.sponsor}</span>
+          <a class="apply-link" href="${s.url}" target="_blank" rel="noopener">
+            Apply ${linkSVG}
+          </a>
+        </div>
+      </div>`;
+  }
+
+  function renderAll(scholarships) {
+    const container = document.getElementById('scholarships-container');
+    if (!scholarships.length) {
+      container.innerHTML = `<div class="empty"><h3>No scholarships match that filter</h3><p>Try selecting "All" to see everything.</p></div>`;
+      return;
+    }
+
+    const now = new Date();
+    const thisMonth = scholarships.filter(s => daysUntil(s.deadline) <= 30 && daysUntil(s.deadline) >= 0);
+    const upcoming  = scholarships.filter(s => daysUntil(s.deadline) > 30);
+
+    let html = '';
+    if (thisMonth.length) {
+      html += `<div class="section-head"><span class="section-title">Closing this month</span><span class="section-line"></span></div>`;
+      html += thisMonth.map(renderCard).join('');
+    }
+    if (upcoming.length) {
+      html += `<div class="section-head"><span class="section-title">Open &amp; upcoming</span><span class="section-line"></span></div>`;
+      html += upcoming.map(renderCard).join('');
+    }
+    container.innerHTML = html;
+  }
+
+  function applyFilter(filter) {
+    activeFilter = filter;
+    document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.filter === filter));
+
+    let filtered = allScholarships;
+    if (filter === 'kansas')  filtered = allScholarships.filter(s => s.tags?.includes('kansas'));
+    if (filter === 'national') filtered = allScholarships.filter(s => s.tags?.includes('national'));
+    if (filter === 'stem')    filtered = allScholarships.filter(s => s.tags?.includes('stem'));
+    if (filter === 'arts')    filtered = allScholarships.filter(s => s.tags?.includes('arts'));
+    if (filter === 'firstgen') filtered = allScholarships.filter(s => s.tags?.includes('firstgen'));
+    if (filter === 'soon')    filtered = allScholarships.filter(s => daysUntil(s.deadline) <= 30 && daysUntil(s.deadline) >= 0);
+
+    renderAll(filtered);
+  }
+
+  function updateStats(scholarships) {
+    const total = scholarships.length;
+    const kansas = scholarships.filter(s => s.tags?.includes('kansas')).length;
+    const soon = scholarships.filter(s => daysUntil(s.deadline) <= 30 && daysUntil(s.deadline) >= 0).length;
+
+    document.getElementById('stat-total').textContent = total;
+    document.getElementById('stat-kansas').textContent = kansas;
+    document.getElementById('stat-deadline').textContent = soon;
+
+    const dollarsEl = document.getElementById('stat-dollars');
+    // Compute rough total from amounts that are parseable
+    let totalDollars = 0;
+    scholarships.forEach(s => {
+      const match = s.amount.replace(/,/g, '').match(/\$?([\d]+)/);
+      if (match) totalDollars += parseInt(match[1]);
+    });
+    if (totalDollars > 999999) {
+      dollarsEl.textContent = '$' + (totalDollars / 1000000).toFixed(1) + 'M+';
+    } else if (totalDollars > 999) {
+      dollarsEl.textContent = '$' + Math.round(totalDollars / 1000) + 'K+';
+    } else {
+      dollarsEl.textContent = totalDollars ? '$' + totalDollars : '—';
+    }
+  }
+
+  async function loadScholarships() {
+    try {
+      const res = await fetch('scholarships.json');
+      const data = await res.json();
+      allScholarships = data.scholarships || [];
+
+      const updated = new Date(data.last_updated);
+      document.getElementById('last-updated').textContent =
+        'Updated ' + updated.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+
+      updateStats(allScholarships);
+      applyFilter('all');
+    } catch (e) {
+      document.getElementById('scholarships-container').innerHTML =
+        `<div class="empty"><h3>Couldn't load scholarships</h3><p>Please try refreshing the page.</p></div>`;
+      document.getElementById('last-updated').textContent = 'Data unavailable';
+    }
+  }
+
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => applyFilter(chip.dataset.filter));
+  });
+
+  loadScholarships();
+</script>
+</body>
+</html>
