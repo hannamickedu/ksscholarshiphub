@@ -87,7 +87,7 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Open scholarships</span></div>
-    <div class="stat"><span class="stat-num" id="stat-dollars">—</span><span class="stat-label">Total available</span></div>
+    <div class="stat"><span class="stat-num" id="stat-dollars">—</span><span class="stat-label">Dollars available</span></div>
     <div class="stat"><span class="stat-num" id="stat-kansas">—</span><span class="stat-label">Kansas-specific</span></div>
     <div class="stat"><span class="stat-num" id="stat-deadline">—</span><span class="stat-label">Closing this month</span></div>
   </div>
@@ -114,17 +114,17 @@
 </footer>
 
 <script>
-const clockSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
-const linkSVG  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+var clockSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
+var linkSVG  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
 
-let allScholarships = [];
-let activeFilter = 'all';
+var allScholarships = [];
+var activeFilter = 'all';
 
 function daysUntil(d) { return Math.ceil((new Date(d) - new Date()) / 86400000); }
 function formatDeadline(d) { return new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); }
 
 function tagHTML(tags) {
-  const map = {kansas:['Kansas','tag-kansas'],national:['National','tag-national'],stem:['STEM','tag-stem'],arts:['Arts','tag-arts'],firstgen:['First-gen','tag-firstgen'],merit:['Merit','tag-merit'],need:['Need-based','tag-need']};
+  var map = {kansas:['Kansas','tag-kansas'],national:['National','tag-national'],stem:['STEM','tag-stem'],arts:['Arts','tag-arts'],firstgen:['First-gen','tag-firstgen'],merit:['Merit','tag-merit'],need:['Need-based','tag-need']};
   return (tags||[]).map(function(t){ var r=map[t]||[t,'tag-national']; return '<span class="tag '+r[1]+'">'+r[0]+'</span>'; }).join('');
 }
 
@@ -170,28 +170,38 @@ function updateStats(scholarships) {
   document.getElementById('stat-total').textContent = scholarships.length;
   document.getElementById('stat-kansas').textContent = scholarships.filter(function(s){return s.tags&&s.tags.indexOf('kansas')>-1;}).length;
   document.getElementById('stat-deadline').textContent = scholarships.filter(function(s){return daysUntil(s.deadline)<=30&&daysUntil(s.deadline)>=0;}).length;
-  var total = 0;
-  scholarships.forEach(function(s){ var m=s.amount.replace(/,/g,'').match(/\$?([\d]+)/); if(m) total+=parseInt(m[1]); });
-  var el = document.getElementById('stat-dollars');
-  el.textContent = total>999999 ? '$'+(total/1000000).toFixed(1)+'M+' : total>999 ? '$'+Math.round(total/1000)+'K+' : total?'$'+total:'varies';
+  // Count scholarships with parseable dollar amounts
+  var count = 0;
+  scholarships.forEach(function(s){
+    var m = s.amount.replace(/,/g,'').match(/\$?([\d]+)/);
+    if(m) count++;
+  });
+  document.getElementById('stat-dollars').textContent = count + ' with set amounts';
 }
 
-// Load from scholarships.json — updated every Monday by the bot
-fetch('scholarships.json?v=' + Date.now())
-  .then(function(r){ return r.json(); })
-  .then(function(data) {
-    allScholarships = (data.scholarships||[]).filter(function(s){return daysUntil(s.deadline)>=0;}).sort(function(a,b){return new Date(a.deadline)-new Date(b.deadline);});
-    var updated = new Date(data.last_updated);
-    document.getElementById('last-updated').textContent = 'Updated '+updated.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
-    updateStats(allScholarships);
-    applyFilter('all');
-  })
-  .catch(function() {
-    document.getElementById('scholarships-container').innerHTML = '<div class="empty"><h3>Could not load scholarships</h3><p>Please try refreshing the page.</p></div>';
-    document.getElementById('last-updated').textContent = 'Data unavailable';
-  });
+function loadData() {
+  var url = 'scholarships.json?nocache=' + Date.now();
+  fetch(url)
+    .then(function(r){
+      if (!r.ok) throw new Error('Network error');
+      return r.json();
+    })
+    .then(function(data) {
+      allScholarships = (data.scholarships||[]).filter(function(s){return daysUntil(s.deadline)>=0;}).sort(function(a,b){return new Date(a.deadline)-new Date(b.deadline);});
+      var updated = new Date(data.last_updated);
+      document.getElementById('last-updated').textContent = 'Updated '+updated.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+      updateStats(allScholarships);
+      applyFilter('all');
+    })
+    .catch(function(err) {
+      console.log('Fetch error:', err);
+      document.getElementById('last-updated').textContent = 'Updated weekly every Monday';
+      document.getElementById('scholarships-container').innerHTML = '<div class="empty"><h3>Could not load scholarships</h3><p>Please try refreshing the page.</p></div>';
+    });
+}
 
 document.querySelectorAll('.chip').forEach(function(chip){chip.addEventListener('click',function(){applyFilter(chip.dataset.filter);});});
+loadData();
 </script>
 </body>
 </html>
