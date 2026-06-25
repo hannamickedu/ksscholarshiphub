@@ -21,15 +21,17 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install anthropic requests
 
       - name: Run scholarship updater
         run: python update_scholarships.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Commit updated data
         run: |
           git config user.name "Scholarship Bot"
           git config user.email "bot@scholarship-hub"
-          git add scholarships.json
+          git add scholarships.json index.html
           git diff --staged --quiet || git commit -m "Weekly scholarship update - $(date +'%B %d, %Y')"
           git push
