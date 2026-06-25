@@ -1,0 +1,29 @@
+name: Daily AI in Education Brief
+
+on:
+  schedule:
+    # 12:00 PM Central Time = 17:00 UTC (CDT) / 18:00 UTC (CST)
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  send-brief:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Send AI Education brief
+        run: python send_ai_education_brief.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
