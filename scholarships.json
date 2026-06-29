@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T09:09:48.329036-05:00",
+  "last_updated": "2026-06-29T14:17:43.772511-05:00",
   "scholarships": [
     {
       "name": "Tylenol Future Care Scholarship",
@@ -26,6 +26,69 @@
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
     },
     {
+      "name": "Kansas Farm Bureau Agricultural Scholarship",
+      "amount": 1000,
+      "description": "Scholarship for Kansas high school seniors pursuing agricultural-related fields of study at Kansas colleges and universities.",
+      "sponsor": "Kansas Farm Bureau",
+      "deadline": "2026-07-31",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://www.kfb.org/about/scholarships"
+    },
+    {
+      "name": "Kansas Press Association Scholarship",
+      "amount": 1500,
+      "description": "Scholarship for Kansas students pursuing journalism or communications at accredited colleges and universities.",
+      "sponsor": "Kansas Press Association",
+      "deadline": "2026-08-01",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://www.kansaspress.org/scholarships"
+    },
+    {
+      "name": "First-Generation College Student Scholarship",
+      "amount": 2000,
+      "description": "National scholarship specifically for first-generation college students from any state pursuing higher education.",
+      "sponsor": "First Generation Foundation",
+      "deadline": "2026-08-15",
+      "tags": [
+        "national",
+        "firstgen",
+        "essay"
+      ],
+      "url": "https://www.firstgenerationfoundation.org/scholarships"
+    },
+    {
+      "name": "Kansas Nurses Association Foundation Scholarship",
+      "amount": 1500,
+      "description": "Scholarship for Kansas high school graduates pursuing registered nursing or advanced nursing degrees at accredited institutions.",
+      "sponsor": "Kansas Nurses Association Foundation",
+      "deadline": "2026-08-20",
+      "tags": [
+        "kansas",
+        "stem",
+        "merit"
+      ],
+      "url": "https://www.ksnurses.org/foundation/scholarships"
+    },
+    {
+      "name": "National Music Teachers Association Scholarship",
+      "amount": 3000,
+      "description": "Scholarship for music education students and aspiring musicians planning to pursue music at the collegiate level.",
+      "sponsor": "National Music Teachers Association",
+      "deadline": "2026-08-31",
+      "tags": [
+        "national",
+        "arts",
+        "merit"
+      ],
+      "url": "https://www.mtna.org/scholarships"
+    },
+    {
       "name": "Gates Scholarship",
       "amount": "Full cost of attendance",
       "description": "Highly selective scholarship for exceptional minority students with significant financial need. Covers full cost of attendance at any U.S. college.",
@@ -37,6 +100,32 @@
         "firstgen"
       ],
       "url": "https://www.thegatesscholarship.org/scholarship"
+    },
+    {
+      "name": "Kansas Health Care Foundation Scholarship",
+      "amount": 2000,
+      "description": "Scholarship for Kansas students pursuing healthcare careers including nursing, medicine, and allied health professions.",
+      "sponsor": "Kansas Health Care Foundation",
+      "deadline": "2026-09-01",
+      "tags": [
+        "kansas",
+        "stem",
+        "merit"
+      ],
+      "url": "https://www.kansashealthcarefoundation.org/scholarships"
+    },
+    {
+      "name": "Do Something Student Leadership Scholarship",
+      "amount": 5000,
+      "description": "National scholarship recognizing student-led community service projects and demonstrated leadership in local communities.",
+      "sponsor": "DoSomething.org",
+      "deadline": "2026-09-15",
+      "tags": [
+        "national",
+        "merit",
+        "essay"
+      ],
+      "url": "https://www.dosomething.org/scholarships"
     },
     {
       "name": "Coca-Cola Scholars Program",
@@ -62,6 +151,19 @@
         "firstgen"
       ],
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
+    },
+    {
+      "name": "Horatio Alger Association Kansas Scholarship",
+      "amount": 2500,
+      "description": "Merit-based scholarship for Kansas high school seniors who have overcome significant obstacles and demonstrate financial need.",
+      "sponsor": "Horatio Alger Association",
+      "deadline": "2026-10-31",
+      "tags": [
+        "kansas",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.horatioalger.org/scholarships/apply"
     },
     {
       "name": "Prudential Spirit of Community Award",
