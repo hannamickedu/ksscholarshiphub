@@ -1,17 +1,18 @@
 {
-  "last_updated": "2026-07-06T14:04:29.461232-05:00",
+  "last_updated": "2026-07-13T13:19:14.642778-05:00",
   "scholarships": [
     {
-      "name": "American Farm Bureau Federation Scholarship",
-      "amount": "$500-$2,000",
-      "description": "Scholarships for students pursuing agriculture, agricultural business, or agricultural science, with preference for Farm Bureau families.",
-      "sponsor": "American Farm Bureau Federation",
-      "deadline": "2026-07-15",
+      "name": "NFWF Native Plant Conservation Initiative Scholarship",
+      "amount": 10000,
+      "description": "For students pursuing careers in native plant conservation, environmental science, or related fields. Strong preference for prairie conservation focus.",
+      "sponsor": "National Fish and Wildlife Foundation",
+      "deadline": "2026-08-15",
       "tags": [
         "national",
-        "stem"
+        "stem",
+        "merit"
       ],
-      "url": "https://www.fb.org/programs/scholarships"
+      "url": "https://www.nfwf.org/grants-and-fellowships"
     },
     {
       "name": "Gates Scholarship",
@@ -52,6 +53,32 @@
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
     },
     {
+      "name": "Horatio Alger Association Kansas Scholarship",
+      "amount": 7500,
+      "description": "For high school students from Kansas demonstrating financial need and strong character, pursuing bachelor's degrees at accredited institutions.",
+      "sponsor": "Horatio Alger Association of Distinguished Americans",
+      "deadline": "2026-10-31",
+      "tags": [
+        "kansas",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.horatioalger.org/scholarships"
+    },
+    {
+      "name": "American String Teachers Association Foundation Scholarship",
+      "amount": 2000,
+      "description": "For high school students majoring in music education or performance, especially string instruments. Merit and audition-based.",
+      "sponsor": "American String Teachers Association",
+      "deadline": "2026-11-01",
+      "tags": [
+        "national",
+        "arts",
+        "merit"
+      ],
+      "url": "https://www.asta.net/Membership/Scholarships"
+    },
+    {
       "name": "Prudential Spirit of Community Award",
       "amount": "$1,000 plus trip to Washington DC",
       "description": "Honors high school students for outstanding volunteer service. Each state selects two Distinguished Finalists who receive $1,000 each.",
@@ -77,6 +104,19 @@
       "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
     },
     {
+      "name": "Inroads Internship and Scholarship Program",
+      "amount": 5000,
+      "description": "Leadership development program for underrepresented minorities pursuing STEM careers, includes internship placement and mentorship.",
+      "sponsor": "Inroads",
+      "deadline": "2026-11-30",
+      "tags": [
+        "national",
+        "stem",
+        "merit"
+      ],
+      "url": "https://www.inroads.org"
+    },
+    {
       "name": "Dell Scholars Program",
       "amount": "$20,000 plus laptop and support",
       "description": "For students who demonstrate the drive to succeed despite facing difficult circumstances. Includes ongoing support resources through college.",
@@ -100,6 +140,18 @@
         "need"
       ],
       "url": "https://www.bkmclamorefoundation.org/apply"
+    },
+    {
+      "name": "Newman Civic Fellowship",
+      "amount": 5000,
+      "description": "National program for college-bound high school seniors demonstrating leadership in public service and community engagement.",
+      "sponsor": "Campus Compact",
+      "deadline": "2026-12-15",
+      "tags": [
+        "national",
+        "merit"
+      ],
+      "url": "https://www.newmancivicfellows.org"
     },
     {
       "name": "Scholly Scholarship Search",
