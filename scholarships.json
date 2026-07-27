@@ -1,43 +1,6 @@
 {
-  "last_updated": "2026-07-20T12:07:35.349290-05:00",
+  "last_updated": "2026-07-27T12:59:10.037443-05:00",
   "scholarships": [
-    {
-      "name": "Kansas Farm Bureau Scholarship",
-      "amount": "$1,000",
-      "description": "For Kansas high school seniors pursuing agriculture, agribusiness, or farm management studies.",
-      "sponsor": "Kansas Farm Bureau",
-      "deadline": "2026-08-15",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.kfb.org/About/Scholarships"
-    },
-    {
-      "name": "Wichita Community Foundation Scholarships",
-      "amount": "$500-$5,000",
-      "description": "Multiple scholarship funds available for Wichita and Sedgwick County students with various criteria including leadership and community service.",
-      "sponsor": "Wichita Community Foundation",
-      "deadline": "2026-08-31",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.wichitafoundation.org/scholarships"
-    },
-    {
-      "name": "Kansas Medical Society Foundation Scholarship",
-      "amount": "$2,000",
-      "description": "For Kansas high school seniors planning to pursue medical, dental, nursing, or healthcare-related professions.",
-      "sponsor": "Kansas Medical Society Foundation",
-      "deadline": "2026-08-31",
-      "tags": [
-        "kansas",
-        "stem",
-        "merit"
-      ],
-      "url": "https://www.kmed.org/foundation"
-    },
     {
       "name": "Gates Scholarship",
       "amount": "Full cost of attendance",
@@ -50,43 +13,6 @@
         "firstgen"
       ],
       "url": "https://www.thegatesscholarship.org/scholarship"
-    },
-    {
-      "name": "Salina Area Chamber of Commerce Scholarship",
-      "amount": "$1,500",
-      "description": "For high school graduates from Saline County, Kansas attending any accredited college or university.",
-      "sponsor": "Salina Area Chamber of Commerce",
-      "deadline": "2026-09-01",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.salinakansas.org/"
-    },
-    {
-      "name": "First Generation Scholarship Fund",
-      "amount": "$2,000",
-      "description": "National scholarship for first-generation college students demonstrating financial need and academic promise.",
-      "sponsor": "First Generation Foundation",
-      "deadline": "2026-09-15",
-      "tags": [
-        "national",
-        "firstgen",
-        "need"
-      ],
-      "url": "https://www.firstgenerationfoundation.org/"
-    },
-    {
-      "name": "Horticulture Scholarship from Garden Club of America",
-      "amount": "$3,000-$5,000",
-      "description": "For students pursuing careers in horticulture, landscape design, or botany with preference for environmental stewardship.",
-      "sponsor": "Garden Club of America",
-      "deadline": "2026-09-30",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.gcamerica.org/scholarships"
     },
     {
       "name": "Coca-Cola Scholars Program",
@@ -114,30 +40,18 @@
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
     },
     {
-      "name": "Jack Kent Cooke Foundation Scholarship",
-      "amount": "$40,000",
-      "description": "For high-achieving high school graduates from low to moderate-income backgrounds pursuing bachelor's degrees.",
-      "sponsor": "Jack Kent Cooke Foundation",
+      "name": "Horatio Alger Kansas Scholarship",
+      "amount": "$6,000-$10,000",
+      "description": "National scholarship for Kansas students demonstrating financial need and strong character, rewarding determination and resilience.",
+      "sponsor": "Horatio Alger Association",
       "deadline": "2026-10-31",
       "tags": [
         "national",
-        "firstgen",
+        "kansas",
         "need",
         "merit"
       ],
-      "url": "https://www.jkcf.org/scholarships/"
-    },
-    {
-      "name": "Elks National Foundation Most Valuable Student Scholarship",
-      "amount": "$1,000-$15,000",
-      "description": "Merit-based scholarships recognizing leadership, character, and academic achievement for high school seniors.",
-      "sponsor": "Elks National Foundation",
-      "deadline": "2026-10-31",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.elks.org/scholarships"
+      "url": "https://www.horatioalger.org/scholarships"
     },
     {
       "name": "Prudential Spirit of Community Award",
@@ -163,18 +77,6 @@
         "need"
       ],
       "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
-    },
-    {
-      "name": "Daughters of the American Revolution Scholarship",
-      "amount": "$1,000-$5,000",
-      "description": "National scholarship program for high school seniors with demonstrated patriotism and academic achievement.",
-      "sponsor": "Daughters of the American Revolution",
-      "deadline": "2026-11-15",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.dar.org/national-society/scholarships"
     },
     {
       "name": "Dell Scholars Program",
@@ -222,18 +124,6 @@
         "national"
       ],
       "url": "https://www.fastweb.com/"
-    },
-    {
-      "name": "National Merit Scholarship Program",
-      "amount": "$2,500",
-      "description": "One-time payment scholarships for National Merit Finalists attending participating colleges.",
-      "sponsor": "National Merit Scholarship Corporation",
-      "deadline": "2026-12-31",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.nationalmerit.org/"
     },
     {
       "name": "Ron Brown Scholar Program",
