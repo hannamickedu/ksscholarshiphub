@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T09:22:48.885531-05:00",
+  "last_updated": "2026-08-10T07:52:29.438014-05:00",
   "scholarships": [
     {
       "name": "Gates Scholarship",
@@ -15,16 +15,16 @@
       "url": "https://www.thegatesscholarship.org/scholarship"
     },
     {
-      "name": "VolunteerMatch Community Service Scholarship",
-      "amount": "$1500-$2500",
-      "description": "Recognizes high school seniors with significant volunteer experience and community service commitment across the United States.",
-      "sponsor": "VolunteerMatch",
-      "deadline": "2026-09-30",
+      "name": "National Merit Scholarship Program",
+      "amount": 2500,
+      "description": "Scholarships for high-achieving students based on PSAT/NMSQT scores and academic merit",
+      "sponsor": "National Merit Scholarship Corporation",
+      "deadline": "2026-10-14",
       "tags": [
         "national",
         "merit"
       ],
-      "url": "https://www.volunteermatch.org/scholarships"
+      "url": "https://www.nationalmerit.org"
     },
     {
       "name": "Coca-Cola Scholars Program",
@@ -52,19 +52,6 @@
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
     },
     {
-      "name": "Horatio Alger Association Scholarship",
-      "amount": "$6000-$10000",
-      "description": "Supports high school seniors who face adversity and demonstrate integrity and perseverance, with preference for first-generation college students.",
-      "sponsor": "Horatio Alger Association",
-      "deadline": "2026-10-31",
-      "tags": [
-        "national",
-        "firstgen",
-        "need"
-      ],
-      "url": "https://www.horatioalger.org/students"
-    },
-    {
       "name": "Prudential Spirit of Community Award",
       "amount": "$1,000 plus trip to Washington DC",
       "description": "Honors high school students for outstanding volunteer service. Each state selects two Distinguished Finalists who receive $1,000 each.",
@@ -88,18 +75,6 @@
         "need"
       ],
       "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
-    },
-    {
-      "name": "NFIB Young Entrepreneur Scholarship",
-      "amount": "$5000",
-      "description": "For high school seniors demonstrating entrepreneurial spirit and business leadership potential. Open to all U.S. students.",
-      "sponsor": "National Federation of Independent Business",
-      "deadline": "2026-11-30",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.nfib.com/foundation/scholarships"
     },
     {
       "name": "Dell Scholars Program",
@@ -127,16 +102,17 @@
       "url": "https://www.bkmclamorefoundation.org/apply"
     },
     {
-      "name": "College Board Scholarship for First-Generation Students",
-      "amount": "$2500-$5000",
-      "description": "Specifically for first-generation college-bound high school seniors demonstrating academic potential and leadership abilities.",
-      "sponsor": "College Board",
+      "name": "Jack Kent Cooke Foundation Undergraduate Transfer Scholarship",
+      "amount": 40000,
+      "description": "For first-generation and low-income students transferring to four-year institutions",
+      "sponsor": "Jack Kent Cooke Foundation",
       "deadline": "2026-12-15",
       "tags": [
         "national",
-        "firstgen"
+        "firstgen",
+        "need"
       ],
-      "url": "https://www.collegeboard.org/opportunities/scholarships"
+      "url": "https://www.jkcf.org/our-programs/undergraduate-transfer-scholarship"
     },
     {
       "name": "Scholly Scholarship Search",
@@ -161,6 +137,18 @@
       "url": "https://www.fastweb.com/"
     },
     {
+      "name": "Elks Most Valuable Student Scholarship",
+      "amount": 4000,
+      "description": "Merit-based scholarship recognizing scholarship, leadership, and financial need for high school seniors",
+      "sponsor": "Benevolent and Protective Order of Elks",
+      "deadline": "2026-12-31",
+      "tags": [
+        "national",
+        "merit"
+      ],
+      "url": "https://www.elks.org/scholars/scholarships.cfm"
+    },
+    {
       "name": "Ron Brown Scholar Program",
       "amount": "$40,000 over 4 years",
       "description": "Academically gifted African American students who display exceptional leadership potential, participate in community service, and demonstrate financial need.",
@@ -173,6 +161,18 @@
         "firstgen"
       ],
       "url": "https://www.ronbrown.org/section/apply/program-description"
+    },
+    {
+      "name": "Sallie Mae\u00ae Scholarship for Dreams",
+      "amount": 500,
+      "description": "Open to U.S. high school and college students; awards for essays and creative submissions",
+      "sponsor": "Sallie Mae",
+      "deadline": "2027-01-15",
+      "tags": [
+        "national",
+        "essay"
+      ],
+      "url": "https://www.salliemae.com/student-loans/scholarships"
     },
     {
       "name": "KCUR Missouri Valley Journalism Scholarship",
