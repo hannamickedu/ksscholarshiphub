@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T07:29:13.759787-05:00",
+  "last_updated": "2026-08-24T07:33:56.743818-05:00",
   "scholarships": [
     {
       "name": "Gates Scholarship",
@@ -27,20 +27,6 @@
       "url": "https://www.coca-colascholarsfoundation.org/apply/"
     },
     {
-      "name": "First Generation Foundation Scholarship",
-      "amount": 3000,
-      "description": "National scholarship for first-generation college students demonstrating financial need and strong academic performance with essay requirement.",
-      "sponsor": "First Generation Foundation",
-      "deadline": "2026-10-15",
-      "tags": [
-        "national",
-        "firstgen",
-        "need",
-        "essay"
-      ],
-      "url": "https://www.firstgenerationfoundation.org"
-    },
-    {
       "name": "Horatio Alger National Scholarship",
       "amount": "$25,000",
       "description": "For students who have overcome great obstacles. Applicants must demonstrate integrity, perseverance, and financial need.",
@@ -54,17 +40,17 @@
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
     },
     {
-      "name": "Presser Foundation Music Scholarship",
-      "amount": 4000,
-      "description": "National scholarship for music students demonstrating financial need and musical talent, awarded to high school seniors pursuing music education or performance.",
-      "sponsor": "Presser Foundation",
-      "deadline": "2026-11-01",
+      "name": "First Generation Scholarship Program - American Association of University Women",
+      "amount": "$5,000",
+      "description": "National scholarship for first-generation college students, particularly women, pursuing higher education.",
+      "sponsor": "American Association of University Women",
+      "deadline": "2026-10-31",
       "tags": [
         "national",
-        "arts",
-        "need"
+        "firstgen",
+        "merit"
       ],
-      "url": "https://www.presserfoundation.org"
+      "url": "https://www.aauw.org/resources/programs/aauw-scholarships/"
     },
     {
       "name": "Prudential Spirit of Community Award",
@@ -90,6 +76,19 @@
         "need"
       ],
       "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+    },
+    {
+      "name": "Young Musicians Foundation Scholarship",
+      "amount": "$2,000-$10,000",
+      "description": "National scholarship for high school musicians demonstrating exceptional talent and financial need, with emphasis on underrepresented communities.",
+      "sponsor": "Young Musicians Foundation",
+      "deadline": "2026-11-15",
+      "tags": [
+        "national",
+        "arts",
+        "need"
+      ],
+      "url": "https://www.ymfla.org/scholarships"
     },
     {
       "name": "Dell Scholars Program",
@@ -139,18 +138,6 @@
       "url": "https://www.fastweb.com/"
     },
     {
-      "name": "National Association of Farm Broadcasting Scholarship",
-      "amount": 2000,
-      "description": "Scholarships for students pursuing careers in agricultural communications, journalism, or related agricultural fields with strong academics.",
-      "sponsor": "National Association of Farm Broadcasting",
-      "deadline": "2026-12-31",
-      "tags": [
-        "national",
-        "agriculture"
-      ],
-      "url": "https://nafb.org/scholarship"
-    },
-    {
       "name": "Ron Brown Scholar Program",
       "amount": "$40,000 over 4 years",
       "description": "Academically gifted African American students who display exceptional leadership potential, participate in community service, and demonstrate financial need.",
@@ -165,6 +152,18 @@
       "url": "https://www.ronbrown.org/section/apply/program-description"
     },
     {
+      "name": "Point Foundation Scholarship",
+      "amount": "$1,500-$25,000",
+      "description": "National scholarship for LGBTQ+ high school students of merit pursuing higher education.",
+      "sponsor": "Point Foundation",
+      "deadline": "2027-01-15",
+      "tags": [
+        "national",
+        "merit"
+      ],
+      "url": "https://www.pointfoundation.org/our-scholarships"
+    },
+    {
       "name": "KCUR Missouri Valley Journalism Scholarship",
       "amount": "$2,000",
       "description": "For Kansas and Missouri students pursuing journalism, communications, or media studies. Includes mentorship with KCUR public radio staff.",
@@ -175,19 +174,6 @@
         "arts"
       ],
       "url": "https://www.kcur.org/"
-    },
-    {
-      "name": "Kansas STEM Excellence Scholarship",
-      "amount": 2500,
-      "description": "Scholarships for Kansas high school students pursuing STEM fields with emphasis on engineering, biology, and computer science with demonstrated academic excellence.",
-      "sponsor": "Kansas STEM Alliance",
-      "deadline": "2027-01-31",
-      "tags": [
-        "kansas",
-        "stem",
-        "merit"
-      ],
-      "url": "https://www.kansasstem.org"
     },
     {
       "name": "Kansas 4-H Foundation Scholarship",
@@ -241,18 +227,6 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "Grange Insurance Association Scholarship",
-      "amount": 1000,
-      "description": "Renewable scholarship for Kansas high school graduates whose parents are Grange members, emphasizing community service and leadership.",
-      "sponsor": "Grange Insurance Association",
-      "deadline": "2027-02-15",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.grange.org/insurance"
-    },
-    {
       "name": "Kansas City Royals Baseball Scholarship",
       "amount": "$2,000",
       "description": "For graduating high school seniors in the greater Kansas City area demonstrating academic achievement, financial need, and community involvement.",
@@ -278,18 +252,6 @@
       "url": "https://sunflowerfoundation.org/"
     },
     {
-      "name": "Kansas Farm Bureau Young Farmer Scholarship",
-      "amount": 1200,
-      "description": "Scholarships for Kansas high school seniors pursuing agricultural education or farm management with roots in Kansas farming communities.",
-      "sponsor": "Kansas Farm Bureau",
-      "deadline": "2027-02-28",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.kfb.org/scholarships"
-    },
-    {
       "name": "Kansas Rural Water Association Scholarship",
       "amount": "$1,000",
       "description": "Kansas-specific scholarship for students interested in water science, environmental engineering, or rural development. Open to Kansas high school seniors.",
@@ -300,30 +262,6 @@
         "stem"
       ],
       "url": "https://www.krwa.net/"
-    },
-    {
-      "name": "Kansas Future Teachers Scholarship",
-      "amount": 1500,
-      "description": "Scholarships for Kansas high school seniors pursuing careers in teaching, with preference for those committed to teaching in Kansas public schools.",
-      "sponsor": "Kansas Department of Education and Workforce",
-      "deadline": "2027-03-01",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.kansasregents.org/students/financial-aid/scholarships"
-    },
-    {
-      "name": "American Legion Auxiliary Memorial Scholarship",
-      "amount": 2000,
-      "description": "National scholarship for high school seniors whose parents or grandparents served in the military, with priority for Kansas residents.",
-      "sponsor": "American Legion Auxiliary",
-      "deadline": "2027-03-01",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.alaforveterans.org/scholarships"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -338,18 +276,6 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "Sunflower Rotary Club Community Service Scholarship",
-      "amount": 1500,
-      "description": "Kansas-based scholarship for high school seniors with demonstrated community service involvement and academic merit in the greater Kansas region.",
-      "sponsor": "Sunflower Rotary Club",
-      "deadline": "2027-03-15",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.rotary.org/en/our-programs/awards-scholarships"
-    },
-    {
       "name": "Kansas Ethnic Minority Scholarship",
       "amount": "Up to $1,850/yr",
       "description": "For academically talented minority students who are Kansas residents enrolled or planning to enroll at a Kansas postsecondary institution.",
@@ -361,19 +287,6 @@
         "firstgen"
       ],
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
-    },
-    {
-      "name": "Jayhawk Leadership Foundation Scholarship",
-      "amount": 2500,
-      "description": "Awards for Kansas students demonstrating exceptional leadership qualities and community involvement with financial need consideration.",
-      "sponsor": "Jayhawk Leadership Foundation",
-      "deadline": "2027-04-01",
-      "tags": [
-        "kansas",
-        "merit",
-        "need"
-      ],
-      "url": "https://www.jayhawkleadership.org"
     }
   ]
 }
