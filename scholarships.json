@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T11:59:43.911028-05:00",
+  "last_updated": "2026-09-14T12:22:10.842962-05:00",
   "scholarships": [
     {
       "name": "Coca-Cola Scholars Program",
@@ -99,19 +99,6 @@
       "url": "https://www.fastweb.com/"
     },
     {
-      "name": "First-Generation College Student Scholarship - Sallie Mae",
-      "amount": "$2,500 - $5,000",
-      "description": "National scholarship specifically for first-generation college students demonstrating financial need and academic promise.",
-      "sponsor": "Sallie Mae",
-      "deadline": "2026-12-31",
-      "tags": [
-        "national",
-        "firstgen",
-        "need"
-      ],
-      "url": "https://www.salliemae.com/student-loans/scholarships"
-    },
-    {
       "name": "Ron Brown Scholar Program",
       "amount": "$40,000 over 4 years",
       "description": "Academically gifted African American students who display exceptional leadership potential, participate in community service, and demonstrate financial need.",
@@ -126,18 +113,6 @@
       "url": "https://www.ronbrown.org/section/apply/program-description"
     },
     {
-      "name": "Heidbreder Foundation Scholarship",
-      "amount": "$500 - $1,500",
-      "description": "Kansas-based scholarship supporting students from rural Kansas communities pursuing higher education in any field.",
-      "sponsor": "Heidbreder Foundation",
-      "deadline": "2027-01-15",
-      "tags": [
-        "kansas",
-        "need"
-      ],
-      "url": "https://www.heidbrederfoundation.org"
-    },
-    {
       "name": "KCUR Missouri Valley Journalism Scholarship",
       "amount": "$2,000",
       "description": "For Kansas and Missouri students pursuing journalism, communications, or media studies. Includes mentorship with KCUR public radio staff.",
@@ -148,18 +123,6 @@
         "arts"
       ],
       "url": "https://www.kcur.org/"
-    },
-    {
-      "name": "American Legion Kansas High School Oratorical Contest",
-      "amount": "$500 - $3,500",
-      "description": "Competition-based scholarship for Kansas high school students excelling in public speaking and leadership on topics of civic importance.",
-      "sponsor": "American Legion Kansas",
-      "deadline": "2027-01-31",
-      "tags": [
-        "kansas",
-        "merit"
-      ],
-      "url": "https://www.ksamlegion.org"
     },
     {
       "name": "Kansas 4-H Foundation Scholarship",
@@ -184,20 +147,6 @@
         "merit"
       ],
       "url": "https://www.kgfa.org/"
-    },
-    {
-      "name": "Jack Kent Cooke Foundation Young Scholars Program",
-      "amount": "$40,000+",
-      "description": "Competitive national scholarship for high-achieving students with financial need, focusing on first-generation and underrepresented students.",
-      "sponsor": "Jack Kent Cooke Foundation",
-      "deadline": "2027-02-01",
-      "tags": [
-        "national",
-        "firstgen",
-        "need",
-        "merit"
-      ],
-      "url": "https://www.jkcf.org"
     },
     {
       "name": "Davidson Fellows Scholarship",
@@ -227,17 +176,31 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "National Merit Scholarship for Music Students",
-      "amount": "$1,000 - $4,000",
-      "description": "Scholarship for high school musicians demonstrating exceptional talent and academic achievement in music education or performance.",
-      "sponsor": "National Association for Music Education",
+      "name": "American String Teachers Association Foundation Scholarship",
+      "amount": "$1,000-$3,000",
+      "description": "National scholarship for high school students pursuing music education with focus on string instruments, requires performance audition.",
+      "sponsor": "American String Teachers Association",
       "deadline": "2027-02-15",
       "tags": [
         "national",
         "arts",
         "merit"
       ],
-      "url": "https://www.nafme.org/scholarships"
+      "url": "https://www.astaweb.com/foundation-scholarships"
+    },
+    {
+      "name": "Jack Kent Cooke Foundation Young Scholars Program",
+      "amount": "$2,000-$5,000",
+      "description": "National competitive scholarship for high-achieving students with significant unmet financial need, including essay requirement.",
+      "sponsor": "Jack Kent Cooke Foundation",
+      "deadline": "2027-02-20",
+      "tags": [
+        "national",
+        "need",
+        "essay",
+        "merit"
+      ],
+      "url": "https://www.jkcf.org/scholarships/young-scholars"
     },
     {
       "name": "Kansas City Royals Baseball Scholarship",
@@ -277,16 +240,30 @@
       "url": "https://www.krwa.net/"
     },
     {
-      "name": "Kansas Women in Agriculture Scholarship",
-      "amount": "$1,500 - $2,500",
-      "description": "Kansas scholarship supporting female high school students pursuing careers in agriculture, agricultural business, or agricultural science.",
-      "sponsor": "Kansas Farm Bureau Foundation",
+      "name": "The Christopherson Family Foundation Scholarship",
+      "amount": "$1,500-$2,500",
+      "description": "Kansas-based scholarship supporting students pursuing agriculture, environmental science, or natural resource management.",
+      "sponsor": "Christopherson Family Foundation",
       "deadline": "2027-03-01",
       "tags": [
         "kansas",
+        "stem",
         "merit"
       ],
-      "url": "https://www.kfb.org"
+      "url": "https://www.christophersonfamily.org/scholarships"
+    },
+    {
+      "name": "Phi Kappa Phi Honor Society First-Generation Scholarship",
+      "amount": "$1,000",
+      "description": "National scholarship specifically for first-generation college students enrolled as members of Phi Kappa Phi, emphasizing academic excellence.",
+      "sponsor": "Phi Kappa Phi",
+      "deadline": "2027-03-01",
+      "tags": [
+        "national",
+        "firstgen",
+        "merit"
+      ],
+      "url": "https://www.phikappaphi.org/scholarships"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -301,16 +278,16 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "National Association of Farm Broadcasting Scholarship",
-      "amount": "$1,200 - $2,500",
-      "description": "For students interested in agricultural communications, broadcasting, or journalism with a focus on agriculture and rural issues.",
-      "sponsor": "National Association of Farm Broadcasting",
+      "name": "Inman Chamber of Commerce Scholarship",
+      "amount": "$500-$1,000",
+      "description": "Local scholarship for McPherson County high school students demonstrating academic achievement and community involvement.",
+      "sponsor": "Inman Chamber of Commerce",
       "deadline": "2027-03-15",
       "tags": [
-        "national",
-        "agriculture"
+        "kansas",
+        "merit"
       ],
-      "url": "https://www.nafb.com/scholarships"
+      "url": "https://www.inmankansas.com"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
@@ -326,17 +303,29 @@
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
     },
     {
-      "name": "Kansas STEM Education Scholarship",
-      "amount": "$2,000 - $3,000",
-      "description": "Kansas-specific scholarship supporting students pursuing STEM fields in college, with preference for students from underrepresented populations.",
-      "sponsor": "Kansas Department of Education and Workforce",
+      "name": "Agnes M. Lindsay Memorial Scholarship Trust",
+      "amount": "$1,000-$3,000",
+      "description": "Scholarship available to nursing students in Kansas pursuing careers in healthcare, with preference for rural healthcare.",
+      "sponsor": "Agnes M. Lindsay Memorial Scholarship Trust",
       "deadline": "2027-04-01",
       "tags": [
         "kansas",
-        "stem",
-        "merit"
+        "stem"
       ],
-      "url": "https://www.ksde.org"
+      "url": "https://www.agnesmlindsay.org"
+    },
+    {
+      "name": "Sallie Mae\u00ae's Bridging the Dream Scholarship",
+      "amount": "$1,000-$2,000",
+      "description": "National scholarship for first-generation college students pursuing any field of study, emphasizing financial need.",
+      "sponsor": "Sallie Mae",
+      "deadline": "2027-05-15",
+      "tags": [
+        "national",
+        "firstgen",
+        "need"
+      ],
+      "url": "https://www.salliemae.com/bridge"
     }
   ]
 }
