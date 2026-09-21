@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T12:22:10.842962-05:00",
+  "last_updated": "2026-09-21T12:36:11.747063-05:00",
   "scholarships": [
     {
       "name": "Coca-Cola Scholars Program",
@@ -14,6 +14,19 @@
       "url": "https://www.coca-colascholarsfoundation.org/apply/"
     },
     {
+      "name": "YoungArts Scholarship",
+      "amount": "$500 - $10,000",
+      "description": "National scholarship for high school students with demonstrated talent in visual, performing, and media arts.",
+      "sponsor": "National Foundation for Advancement in the Arts",
+      "deadline": "2026-10-15",
+      "tags": [
+        "national",
+        "arts",
+        "merit"
+      ],
+      "url": "https://www.youngarts.org/"
+    },
+    {
       "name": "Horatio Alger National Scholarship",
       "amount": "$25,000",
       "description": "For students who have overcome great obstacles. Applicants must demonstrate integrity, perseverance, and financial need.",
@@ -25,6 +38,20 @@
         "firstgen"
       ],
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
+    },
+    {
+      "name": "Horatio Alger Association Scholarship",
+      "amount": "$6,000 - $30,000",
+      "description": "National scholarship for high school students from low-income families who have demonstrated perseverance and determination to pursue higher education.",
+      "sponsor": "Horatio Alger Association",
+      "deadline": "2026-10-31",
+      "tags": [
+        "national",
+        "firstgen",
+        "need",
+        "merit"
+      ],
+      "url": "https://scholars.horatioalger.org/"
     },
     {
       "name": "Prudential Spirit of Community Award",
@@ -176,31 +203,16 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "American String Teachers Association Foundation Scholarship",
-      "amount": "$1,000-$3,000",
-      "description": "National scholarship for high school students pursuing music education with focus on string instruments, requires performance audition.",
-      "sponsor": "American String Teachers Association",
+      "name": "KFB Young Farmer Scholarship",
+      "amount": "$1,000 - $2,500",
+      "description": "For Kansas high school seniors intending to pursue agriculture or agribusiness, offered by the Kansas Farm Bureau.",
+      "sponsor": "Kansas Farm Bureau",
       "deadline": "2027-02-15",
       "tags": [
-        "national",
-        "arts",
+        "kansas",
         "merit"
       ],
-      "url": "https://www.astaweb.com/foundation-scholarships"
-    },
-    {
-      "name": "Jack Kent Cooke Foundation Young Scholars Program",
-      "amount": "$2,000-$5,000",
-      "description": "National competitive scholarship for high-achieving students with significant unmet financial need, including essay requirement.",
-      "sponsor": "Jack Kent Cooke Foundation",
-      "deadline": "2027-02-20",
-      "tags": [
-        "national",
-        "need",
-        "essay",
-        "merit"
-      ],
-      "url": "https://www.jkcf.org/scholarships/young-scholars"
+      "url": "https://www.kfb.org/"
     },
     {
       "name": "Kansas City Royals Baseball Scholarship",
@@ -228,6 +240,18 @@
       "url": "https://sunflowerfoundation.org/"
     },
     {
+      "name": "Dairy Industry Scholarship",
+      "amount": "$1,500 - $3,500",
+      "description": "For high school seniors planning to study agriculture or dairy-related fields, with preference for students from dairy farming backgrounds.",
+      "sponsor": "Kansas Dairy Commission",
+      "deadline": "2027-02-28",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://agriculture.ks.gov/"
+    },
+    {
       "name": "Kansas Rural Water Association Scholarship",
       "amount": "$1,000",
       "description": "Kansas-specific scholarship for students interested in water science, environmental engineering, or rural development. Open to Kansas high school seniors.",
@@ -240,30 +264,16 @@
       "url": "https://www.krwa.net/"
     },
     {
-      "name": "The Christopherson Family Foundation Scholarship",
-      "amount": "$1,500-$2,500",
-      "description": "Kansas-based scholarship supporting students pursuing agriculture, environmental science, or natural resource management.",
-      "sponsor": "Christopherson Family Foundation",
+      "name": "The Christopherson Family Scholarship",
+      "amount": "$2,000",
+      "description": "Supports Kansas high school graduates pursuing agricultural education or agribusiness studies at Kansas colleges and universities.",
+      "sponsor": "Kansas Agricultural Education Foundation",
       "deadline": "2027-03-01",
       "tags": [
         "kansas",
-        "stem",
         "merit"
       ],
-      "url": "https://www.christophersonfamily.org/scholarships"
-    },
-    {
-      "name": "Phi Kappa Phi Honor Society First-Generation Scholarship",
-      "amount": "$1,000",
-      "description": "National scholarship specifically for first-generation college students enrolled as members of Phi Kappa Phi, emphasizing academic excellence.",
-      "sponsor": "Phi Kappa Phi",
-      "deadline": "2027-03-01",
-      "tags": [
-        "national",
-        "firstgen",
-        "merit"
-      ],
-      "url": "https://www.phikappaphi.org/scholarships"
+      "url": "https://www.ksu.edu/kafb/"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -278,16 +288,17 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "Inman Chamber of Commerce Scholarship",
-      "amount": "$500-$1,000",
-      "description": "Local scholarship for McPherson County high school students demonstrating academic achievement and community involvement.",
-      "sponsor": "Inman Chamber of Commerce",
+      "name": "Envirothon Scholarship",
+      "amount": "$1,000 - $3,000",
+      "description": "Awarded to high school students who have participated in environmental education competitions and demonstrate commitment to conservation.",
+      "sponsor": "National Association of Conservation Districts",
       "deadline": "2027-03-15",
       "tags": [
-        "kansas",
+        "national",
+        "stem",
         "merit"
       ],
-      "url": "https://www.inmankansas.com"
+      "url": "https://www.envirothon.org/"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
@@ -303,29 +314,30 @@
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
     },
     {
-      "name": "Agnes M. Lindsay Memorial Scholarship Trust",
-      "amount": "$1,000-$3,000",
-      "description": "Scholarship available to nursing students in Kansas pursuing careers in healthcare, with preference for rural healthcare.",
-      "sponsor": "Agnes M. Lindsay Memorial Scholarship Trust",
-      "deadline": "2027-04-01",
+      "name": "First Generation Scholarship Program - Kansas",
+      "amount": "$2,000 - $5,000",
+      "description": "Dedicated to Kansas high school seniors who are the first in their family to attend college, with demonstrated financial need.",
+      "sponsor": "Kansas Board of Regents",
+      "deadline": "2027-04-15",
       "tags": [
         "kansas",
-        "stem"
-      ],
-      "url": "https://www.agnesmlindsay.org"
-    },
-    {
-      "name": "Sallie Mae\u00ae's Bridging the Dream Scholarship",
-      "amount": "$1,000-$2,000",
-      "description": "National scholarship for first-generation college students pursuing any field of study, emphasizing financial need.",
-      "sponsor": "Sallie Mae",
-      "deadline": "2027-05-15",
-      "tags": [
-        "national",
         "firstgen",
         "need"
       ],
-      "url": "https://www.salliemae.com/bridge"
+      "url": "https://www.kansasregents.org/"
+    },
+    {
+      "name": "Kansas Teachers Scholarship Loan Program",
+      "amount": "$3,000 - $7,500",
+      "description": "For Kansas residents pursuing teaching degrees, with loan forgiveness if they teach in Kansas schools after graduation.",
+      "sponsor": "Kansas Board of Regents",
+      "deadline": "2027-05-01",
+      "tags": [
+        "kansas",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.kansasregents.org/"
     }
   ]
 }
