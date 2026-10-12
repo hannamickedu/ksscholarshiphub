@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05T15:08:13.854947-05:00",
+  "last_updated": "2026-10-12T15:41:42.817357-05:00",
   "scholarships": [
     {
       "name": "Coca-Cola Scholars Program",
@@ -27,19 +27,6 @@
       "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
     },
     {
-      "name": "VFW Voice of Democracy Scholarship",
-      "amount": 30000,
-      "description": "National scholarship program for high school students competing through essay and audio competition on patriotic themes.",
-      "sponsor": "Veterans of Foreign Wars",
-      "deadline": "2026-10-31",
-      "tags": [
-        "national",
-        "merit",
-        "essay"
-      ],
-      "url": "https://www.vfw.org/community/youth-and-sports/youth-scholarships"
-    },
-    {
       "name": "Prudential Spirit of Community Award",
       "amount": "$1,000 plus trip to Washington DC",
       "description": "Honors high school students for outstanding volunteer service. Each state selects two Distinguished Finalists who receive $1,000 each.",
@@ -63,32 +50,6 @@
         "need"
       ],
       "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
-    },
-    {
-      "name": "Blank Family Foundation Scholar Award",
-      "amount": 3500,
-      "description": "For first-generation and low-income students from rural Midwest communities pursuing higher education.",
-      "sponsor": "Blank Family Foundation",
-      "deadline": "2026-11-15",
-      "tags": [
-        "national",
-        "firstgen",
-        "need"
-      ],
-      "url": "https://www.blankfamilyfoundation.org/programs/scholarship-program"
-    },
-    {
-      "name": "FirstGen Forward Scholarship",
-      "amount": 2500,
-      "description": "National scholarship for first-generation college students demonstrating financial need and academic promise.",
-      "sponsor": "The Center for First-Generation Student Success",
-      "deadline": "2026-11-30",
-      "tags": [
-        "national",
-        "firstgen",
-        "need"
-      ],
-      "url": "https://firstgen.naspa.org/programs-and-resources/scholarships"
     },
     {
       "name": "Dell Scholars Program",
@@ -116,18 +77,6 @@
       "url": "https://www.bkmclamorefoundation.org/apply"
     },
     {
-      "name": "Indy Young Leaders Scholarship",
-      "amount": 1500,
-      "description": "For high school seniors demonstrating exceptional leadership and community service, with preference for rural students.",
-      "sponsor": "Independent Community Banks",
-      "deadline": "2026-12-15",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.icba.org/advocacy/community-development/scholarships"
-    },
-    {
       "name": "Scholly Scholarship Search",
       "amount": "Varies",
       "description": "Scholly matches students to hundreds of scholarships based on their background, interests, and goals. Free to search the database.",
@@ -148,18 +97,6 @@
         "national"
       ],
       "url": "https://www.fastweb.com/"
-    },
-    {
-      "name": "Sallie Mae 529 Scholarship",
-      "amount": 2000,
-      "description": "Merit-based scholarship for high school seniors with strong academic records planning to attend accredited colleges.",
-      "sponsor": "Sallie Mae",
-      "deadline": "2026-12-31",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.salliemae.com/student-loans/529-scholarship/"
     },
     {
       "name": "Ron Brown Scholar Program",
@@ -188,6 +125,18 @@
       "url": "https://www.kcur.org/"
     },
     {
+      "name": "Salina Community Foundation Scholarship",
+      "amount": 1000,
+      "description": "Merit-based scholarship for Salina area high school graduates attending Kansas colleges. Multiple scholarships available with varying criteria.",
+      "sponsor": "Salina Community Foundation",
+      "deadline": "2027-01-31",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://www.salinafoundation.org/scholarships"
+    },
+    {
       "name": "Kansas 4-H Foundation Scholarship",
       "amount": "$1,000-$2,500",
       "description": "For Kansas students who have been active 4-H members for at least 3 years. Preference given to students continuing involvement in agriculture or community development.",
@@ -210,18 +159,6 @@
         "merit"
       ],
       "url": "https://www.kgfa.org/"
-    },
-    {
-      "name": "Phi Theta Kappa All USA Academic Team Scholarship",
-      "amount": 5000,
-      "description": "For transfer students and those attending community college with exceptional academic achievement and leadership.",
-      "sponsor": "Phi Theta Kappa Honor Society",
-      "deadline": "2027-02-01",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.ptk.org/scholarships"
     },
     {
       "name": "Davidson Fellows Scholarship",
@@ -251,16 +188,41 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "Tobin Sorensen Physical Education Scholarship",
-      "amount": 1200,
-      "description": "Kansas-specific scholarship for high school seniors pursuing physical education or sports medicine at Kansas universities.",
-      "sponsor": "Kansas Association for Health, Physical Education, Recreation and Dance",
+      "name": "Inman Company Scholarship",
+      "amount": 1500,
+      "description": "Local Kansas scholarship for high school seniors in central Kansas with demonstrated financial need and community involvement.",
+      "sponsor": "Inman Company Foundation",
       "deadline": "2027-02-15",
       "tags": [
         "kansas",
+        "need"
+      ],
+      "url": "https://www.inmanco.com/community"
+    },
+    {
+      "name": "FIRST Robotics Scholarship",
+      "amount": 5000,
+      "description": "For high school seniors who have participated in FIRST Robotics programs, emphasizing STEM excellence and leadership.",
+      "sponsor": "For Inspiration and Recognition of Science and Technology (FIRST)",
+      "deadline": "2027-02-20",
+      "tags": [
+        "national",
+        "stem",
         "merit"
       ],
-      "url": "https://www.kahperd.org/scholarships"
+      "url": "https://www.firstinspires.org/robotics/frc/scholarship"
+    },
+    {
+      "name": "Newman Civic Fellowship",
+      "amount": 4000,
+      "description": "National scholarship recognizing college-bound high school seniors demonstrating exceptional commitment to community service and civic engagement.",
+      "sponsor": "Campus Compact",
+      "deadline": "2027-02-25",
+      "tags": [
+        "national",
+        "merit"
+      ],
+      "url": "https://www.newtoncivic.org"
     },
     {
       "name": "Kansas City Royals Baseball Scholarship",
@@ -300,17 +262,16 @@
       "url": "https://www.krwa.net/"
     },
     {
-      "name": "Kansas STEM Education Scholarship",
-      "amount": 2500,
-      "description": "For Kansas high school seniors pursuing STEM majors at in-state universities with demonstrated academic excellence.",
-      "sponsor": "Kansas Board of Regents",
+      "name": "Kansas Farm Bureau Agricultural Scholarship",
+      "amount": 2000,
+      "description": "Scholarship for Kansas high school seniors pursuing agriculture, agricultural business, or agricultural education at Kansas colleges and universities.",
+      "sponsor": "Kansas Farm Bureau",
       "deadline": "2027-03-01",
       "tags": [
         "kansas",
-        "stem",
         "merit"
       ],
-      "url": "https://www.kansasregents.org/students/financial-aid/scholarships"
+      "url": "https://www.kfb.org/news-and-events/programs-and-services/scholarships"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -325,16 +286,57 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "Kansas Farm Bureau Young Farmer Scholarship",
-      "amount": 1000,
-      "description": "Awarded to Kansas high school seniors pursuing agriculture, agribusiness, or agricultural education at Kansas colleges and universities.",
-      "sponsor": "Kansas Farm Bureau",
+      "name": "Jack Kent Cooke Foundation Undergraduate Transfer Scholarship",
+      "amount": 40000,
+      "description": "For first-generation college students with outstanding academic achievement and demonstrated financial need who are transferring from community college.",
+      "sponsor": "Jack Kent Cooke Foundation",
+      "deadline": "2027-03-15",
+      "tags": [
+        "national",
+        "firstgen",
+        "need"
+      ],
+      "url": "https://www.jkcf.org/scholarship-programs/undergraduate-transfer-scholarship"
+    },
+    {
+      "name": "Kansas Medical Society Foundation Scholarship",
+      "amount": 3000,
+      "description": "For Kansas high school seniors pursuing careers in healthcare, including medicine, nursing, dentistry, and allied health fields.",
+      "sponsor": "Kansas Medical Society Foundation",
       "deadline": "2027-03-15",
       "tags": [
         "kansas",
+        "stem",
         "merit"
       ],
-      "url": "https://www.kfb.org/about/scholarships"
+      "url": "https://www.kmsfoundation.org/scholarships"
+    },
+    {
+      "name": "Horatio Alger Kansas Scholarship",
+      "amount": 6000,
+      "description": "Scholarship for Kansas high school seniors who demonstrate integrity, perseverance, and financial need. Must be pursuing higher education.",
+      "sponsor": "Horatio Alger Association",
+      "deadline": "2027-03-31",
+      "tags": [
+        "kansas",
+        "firstgen",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.horatioalger.org/scholarships"
+    },
+    {
+      "name": "American Music Therapy Association Foundation Scholarship",
+      "amount": 5000,
+      "description": "For students pursuing music therapy studies. Considers academic achievement, financial need, and commitment to the field of music therapy.",
+      "sponsor": "American Music Therapy Association",
+      "deadline": "2027-03-31",
+      "tags": [
+        "national",
+        "arts",
+        "merit"
+      ],
+      "url": "https://www.musictherapy.org/scholarship"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
