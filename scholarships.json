@@ -1,18 +1,6 @@
 {
-  "last_updated": "2026-10-12T15:41:42.817357-05:00",
+  "last_updated": "2026-10-19T13:06:11.254602-05:00",
   "scholarships": [
-    {
-      "name": "Coca-Cola Scholars Program",
-      "amount": "$20,000",
-      "description": "One of the most prestigious national scholarships for high school seniors. Merit-based, awarded to 150 students annually. Strong community leadership record required.",
-      "sponsor": "Coca-Cola Foundation",
-      "deadline": "2026-10-15",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.coca-colascholarsfoundation.org/apply/"
-    },
     {
       "name": "Horatio Alger National Scholarship",
       "amount": "$25,000",
@@ -113,6 +101,33 @@
       "url": "https://www.ronbrown.org/section/apply/program-description"
     },
     {
+      "name": "Jack Kent Cooke Foundation Young Scholars Program",
+      "amount": "$40,000 over 4 years",
+      "description": "National scholarship for high-achieving students with significant financial need. Offers mentoring and support services alongside financial aid.",
+      "sponsor": "Jack Kent Cooke Foundation",
+      "deadline": "2027-01-10",
+      "tags": [
+        "national",
+        "need",
+        "merit",
+        "essay"
+      ],
+      "url": "https://www.jkcf.org/scholarships/young-scholars"
+    },
+    {
+      "name": "Point Foundation LGBTQ+ Scholarship",
+      "amount": "$1,000-$20,000",
+      "description": "National scholarship for LGBTQ+ students demonstrating merit and commitment to community. Supports students in all academic fields.",
+      "sponsor": "Point Foundation",
+      "deadline": "2027-01-15",
+      "tags": [
+        "national",
+        "merit",
+        "essay"
+      ],
+      "url": "https://www.pointfoundation.org/scholarships"
+    },
+    {
       "name": "KCUR Missouri Valley Journalism Scholarship",
       "amount": "$2,000",
       "description": "For Kansas and Missouri students pursuing journalism, communications, or media studies. Includes mentorship with KCUR public radio staff.",
@@ -125,16 +140,17 @@
       "url": "https://www.kcur.org/"
     },
     {
-      "name": "Salina Community Foundation Scholarship",
-      "amount": 1000,
-      "description": "Merit-based scholarship for Salina area high school graduates attending Kansas colleges. Multiple scholarships available with varying criteria.",
-      "sponsor": "Salina Community Foundation",
+      "name": "Wichita Community Foundation Young Leaders Scholarship",
+      "amount": "$1,500",
+      "description": "Open to Wichita-area high school seniors involved in community service and civic engagement. Focuses on developing future community leaders.",
+      "sponsor": "Wichita Community Foundation",
       "deadline": "2027-01-31",
       "tags": [
         "kansas",
-        "merit"
+        "merit",
+        "essay"
       ],
-      "url": "https://www.salinafoundation.org/scholarships"
+      "url": "https://www.wichitafoundation.org/scholarships"
     },
     {
       "name": "Kansas 4-H Foundation Scholarship",
@@ -188,41 +204,30 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "Inman Company Scholarship",
-      "amount": 1500,
-      "description": "Local Kansas scholarship for high school seniors in central Kansas with demonstrated financial need and community involvement.",
-      "sponsor": "Inman Company Foundation",
+      "name": "Kansas Leadership in Action Scholarship",
+      "amount": "$2,500",
+      "description": "For Kansas high school seniors demonstrating exceptional leadership and community service. Recognizes students who have made significant contributions to their communities.",
+      "sponsor": "Kansas Association of School Boards",
       "deadline": "2027-02-15",
       "tags": [
         "kansas",
-        "need"
+        "merit",
+        "essay"
       ],
-      "url": "https://www.inmanco.com/community"
+      "url": "https://www.kasb.org/students-parents/scholarships"
     },
     {
-      "name": "FIRST Robotics Scholarship",
-      "amount": 5000,
-      "description": "For high school seniors who have participated in FIRST Robotics programs, emphasizing STEM excellence and leadership.",
-      "sponsor": "For Inspiration and Recognition of Science and Technology (FIRST)",
-      "deadline": "2027-02-20",
+      "name": "Newman Civic Fellows Program",
+      "amount": "$2,000-$5,000",
+      "description": "National scholarship for students committed to civic engagement and public service. Supports character-driven leaders working for the common good.",
+      "sponsor": "Campus Compact & Newman Foundation",
+      "deadline": "2027-02-15",
       "tags": [
         "national",
-        "stem",
-        "merit"
+        "merit",
+        "essay"
       ],
-      "url": "https://www.firstinspires.org/robotics/frc/scholarship"
-    },
-    {
-      "name": "Newman Civic Fellowship",
-      "amount": 4000,
-      "description": "National scholarship recognizing college-bound high school seniors demonstrating exceptional commitment to community service and civic engagement.",
-      "sponsor": "Campus Compact",
-      "deadline": "2027-02-25",
-      "tags": [
-        "national",
-        "merit"
-      ],
-      "url": "https://www.newtoncivic.org"
+      "url": "https://www.newmancivicfellows.org"
     },
     {
       "name": "Kansas City Royals Baseball Scholarship",
@@ -250,6 +255,33 @@
       "url": "https://sunflowerfoundation.org/"
     },
     {
+      "name": "First-Generation Scholars Program",
+      "amount": "$3,000",
+      "description": "National scholarship exclusively for first-generation college students. Awards based on academic merit and demonstrated financial need.",
+      "sponsor": "College Step Up",
+      "deadline": "2027-02-28",
+      "tags": [
+        "national",
+        "firstgen",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.collegestepup.org/scholarships"
+    },
+    {
+      "name": "Kansas Press Association Scholarship",
+      "amount": "$1,000",
+      "description": "For Kansas high school seniors pursuing journalism, communications, or media studies. Supports future journalists and media professionals.",
+      "sponsor": "Kansas Press Association",
+      "deadline": "2027-02-28",
+      "tags": [
+        "kansas",
+        "merit",
+        "essay"
+      ],
+      "url": "https://www.kpa.org/scholarships"
+    },
+    {
       "name": "Kansas Rural Water Association Scholarship",
       "amount": "$1,000",
       "description": "Kansas-specific scholarship for students interested in water science, environmental engineering, or rural development. Open to Kansas high school seniors.",
@@ -262,16 +294,17 @@
       "url": "https://www.krwa.net/"
     },
     {
-      "name": "Kansas Farm Bureau Agricultural Scholarship",
-      "amount": 2000,
-      "description": "Scholarship for Kansas high school seniors pursuing agriculture, agricultural business, or agricultural education at Kansas colleges and universities.",
+      "name": "Kansas Farm Bureau Scholarship",
+      "amount": "$1,000",
+      "description": "Awarded to Kansas high school seniors pursuing agriculture, agribusiness, or related fields. Preference given to children of Farm Bureau members.",
       "sponsor": "Kansas Farm Bureau",
       "deadline": "2027-03-01",
       "tags": [
         "kansas",
+        "agriculture",
         "merit"
       ],
-      "url": "https://www.kfb.org/news-and-events/programs-and-services/scholarships"
+      "url": "https://www.kfb.org/About/Scholarships"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -286,57 +319,16 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "Jack Kent Cooke Foundation Undergraduate Transfer Scholarship",
-      "amount": 40000,
-      "description": "For first-generation college students with outstanding academic achievement and demonstrated financial need who are transferring from community college.",
-      "sponsor": "Jack Kent Cooke Foundation",
-      "deadline": "2027-03-15",
-      "tags": [
-        "national",
-        "firstgen",
-        "need"
-      ],
-      "url": "https://www.jkcf.org/scholarship-programs/undergraduate-transfer-scholarship"
-    },
-    {
-      "name": "Kansas Medical Society Foundation Scholarship",
-      "amount": 3000,
-      "description": "For Kansas high school seniors pursuing careers in healthcare, including medicine, nursing, dentistry, and allied health fields.",
-      "sponsor": "Kansas Medical Society Foundation",
+      "name": "Kansas 4-H Scholarship",
+      "amount": "$500-$2,000",
+      "description": "For Kansas high school seniors who are current or former 4-H members. Recognizes leadership development and personal growth through 4-H programs.",
+      "sponsor": "Kansas 4-H Foundation",
       "deadline": "2027-03-15",
       "tags": [
         "kansas",
-        "stem",
         "merit"
       ],
-      "url": "https://www.kmsfoundation.org/scholarships"
-    },
-    {
-      "name": "Horatio Alger Kansas Scholarship",
-      "amount": 6000,
-      "description": "Scholarship for Kansas high school seniors who demonstrate integrity, perseverance, and financial need. Must be pursuing higher education.",
-      "sponsor": "Horatio Alger Association",
-      "deadline": "2027-03-31",
-      "tags": [
-        "kansas",
-        "firstgen",
-        "need",
-        "merit"
-      ],
-      "url": "https://www.horatioalger.org/scholarships"
-    },
-    {
-      "name": "American Music Therapy Association Foundation Scholarship",
-      "amount": 5000,
-      "description": "For students pursuing music therapy studies. Considers academic achievement, financial need, and commitment to the field of music therapy.",
-      "sponsor": "American Music Therapy Association",
-      "deadline": "2027-03-31",
-      "tags": [
-        "national",
-        "arts",
-        "merit"
-      ],
-      "url": "https://www.musictherapy.org/scholarship"
+      "url": "https://www.kansas4hfoundation.org/scholarships"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
