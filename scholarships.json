@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-10-19T13:06:11.254602-05:00",
+  "last_updated": "2026-10-26T13:02:27.693523-05:00",
   "scholarships": [
-    {
-      "name": "Horatio Alger National Scholarship",
-      "amount": "$25,000",
-      "description": "For students who have overcome great obstacles. Applicants must demonstrate integrity, perseverance, and financial need.",
-      "sponsor": "Horatio Alger Association",
-      "deadline": "2026-10-25",
-      "tags": [
-        "national",
-        "need",
-        "firstgen"
-      ],
-      "url": "https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/"
-    },
     {
       "name": "Prudential Spirit of Community Award",
       "amount": "$1,000 plus trip to Washington DC",
@@ -101,29 +88,15 @@
       "url": "https://www.ronbrown.org/section/apply/program-description"
     },
     {
-      "name": "Jack Kent Cooke Foundation Young Scholars Program",
-      "amount": "$40,000 over 4 years",
-      "description": "National scholarship for high-achieving students with significant financial need. Offers mentoring and support services alongside financial aid.",
-      "sponsor": "Jack Kent Cooke Foundation",
-      "deadline": "2027-01-10",
-      "tags": [
-        "national",
-        "need",
-        "merit",
-        "essay"
-      ],
-      "url": "https://www.jkcf.org/scholarships/young-scholars"
-    },
-    {
-      "name": "Point Foundation LGBTQ+ Scholarship",
-      "amount": "$1,000-$20,000",
-      "description": "National scholarship for LGBTQ+ students demonstrating merit and commitment to community. Supports students in all academic fields.",
+      "name": "Point Foundation Scholarship - LGBTQ+ Students",
+      "amount": "$1,500-$25,000",
+      "description": "For LGBTQ+ students with demonstrated financial need and community involvement, available to students nationwide including Kansas.",
       "sponsor": "Point Foundation",
       "deadline": "2027-01-15",
       "tags": [
         "national",
-        "merit",
-        "essay"
+        "need",
+        "merit"
       ],
       "url": "https://www.pointfoundation.org/scholarships"
     },
@@ -138,19 +111,6 @@
         "arts"
       ],
       "url": "https://www.kcur.org/"
-    },
-    {
-      "name": "Wichita Community Foundation Young Leaders Scholarship",
-      "amount": "$1,500",
-      "description": "Open to Wichita-area high school seniors involved in community service and civic engagement. Focuses on developing future community leaders.",
-      "sponsor": "Wichita Community Foundation",
-      "deadline": "2027-01-31",
-      "tags": [
-        "kansas",
-        "merit",
-        "essay"
-      ],
-      "url": "https://www.wichitafoundation.org/scholarships"
     },
     {
       "name": "Kansas 4-H Foundation Scholarship",
@@ -204,30 +164,17 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "Kansas Leadership in Action Scholarship",
-      "amount": "$2,500",
-      "description": "For Kansas high school seniors demonstrating exceptional leadership and community service. Recognizes students who have made significant contributions to their communities.",
-      "sponsor": "Kansas Association of School Boards",
-      "deadline": "2027-02-15",
-      "tags": [
-        "kansas",
-        "merit",
-        "essay"
-      ],
-      "url": "https://www.kasb.org/students-parents/scholarships"
-    },
-    {
-      "name": "Newman Civic Fellows Program",
-      "amount": "$2,000-$5,000",
-      "description": "National scholarship for students committed to civic engagement and public service. Supports character-driven leaders working for the common good.",
-      "sponsor": "Campus Compact & Newman Foundation",
+      "name": "FFA Scholarship - Agricultural Leadership",
+      "amount": "$1,000-$3,000",
+      "description": "For FFA members pursuing agriculture, agricultural education, or agricultural business with demonstrated leadership.",
+      "sponsor": "National FFA Organization",
       "deadline": "2027-02-15",
       "tags": [
         "national",
-        "merit",
-        "essay"
+        "stem",
+        "merit"
       ],
-      "url": "https://www.newmancivicfellows.org"
+      "url": "https://www.ffa.org/scholarships"
     },
     {
       "name": "Kansas City Royals Baseball Scholarship",
@@ -255,31 +202,16 @@
       "url": "https://sunflowerfoundation.org/"
     },
     {
-      "name": "First-Generation Scholars Program",
-      "amount": "$3,000",
-      "description": "National scholarship exclusively for first-generation college students. Awards based on academic merit and demonstrated financial need.",
-      "sponsor": "College Step Up",
-      "deadline": "2027-02-28",
-      "tags": [
-        "national",
-        "firstgen",
-        "need",
-        "merit"
-      ],
-      "url": "https://www.collegestepup.org/scholarships"
-    },
-    {
-      "name": "Kansas Press Association Scholarship",
-      "amount": "$1,000",
-      "description": "For Kansas high school seniors pursuing journalism, communications, or media studies. Supports future journalists and media professionals.",
-      "sponsor": "Kansas Press Association",
+      "name": "Wichita Community Foundation Youth Scholarship",
+      "amount": "$1,000-$3,000",
+      "description": "For high school seniors in the Wichita metropolitan area demonstrating community service and academic achievement.",
+      "sponsor": "Wichita Community Foundation",
       "deadline": "2027-02-28",
       "tags": [
         "kansas",
-        "merit",
-        "essay"
+        "merit"
       ],
-      "url": "https://www.kpa.org/scholarships"
+      "url": "https://www.wichitacf.org/scholarships"
     },
     {
       "name": "Kansas Rural Water Association Scholarship",
@@ -294,17 +226,17 @@
       "url": "https://www.krwa.net/"
     },
     {
-      "name": "Kansas Farm Bureau Scholarship",
-      "amount": "$1,000",
-      "description": "Awarded to Kansas high school seniors pursuing agriculture, agribusiness, or related fields. Preference given to children of Farm Bureau members.",
+      "name": "Kansas Farm Bureau Young Farmer Scholarship",
+      "amount": "$2,000",
+      "description": "Supports Kansas high school seniors pursuing careers in agriculture or agribusiness with Kansas roots.",
       "sponsor": "Kansas Farm Bureau",
       "deadline": "2027-03-01",
       "tags": [
         "kansas",
-        "agriculture",
+        "stem",
         "merit"
       ],
-      "url": "https://www.kfb.org/About/Scholarships"
+      "url": "https://www.kfb.org/scholarships"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -319,16 +251,30 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "Kansas 4-H Scholarship",
-      "amount": "$500-$2,000",
-      "description": "For Kansas high school seniors who are current or former 4-H members. Recognizes leadership development and personal growth through 4-H programs.",
-      "sponsor": "Kansas 4-H Foundation",
+      "name": "Salina Journal Scholarship Fund",
+      "amount": "$1,500",
+      "description": "For high school seniors in central Kansas planning to pursue journalism, communications, or media studies.",
+      "sponsor": "Salina Journal",
       "deadline": "2027-03-15",
       "tags": [
         "kansas",
+        "arts",
         "merit"
       ],
-      "url": "https://www.kansas4hfoundation.org/scholarships"
+      "url": "https://www.salina.com"
+    },
+    {
+      "name": "Young Musicians Foundation Scholarship",
+      "amount": "$2,000-$5,000",
+      "description": "For high school musicians demonstrating exceptional talent and commitment to music; accepts applications from Kansas students.",
+      "sponsor": "Young Musicians Foundation",
+      "deadline": "2027-03-31",
+      "tags": [
+        "national",
+        "arts",
+        "merit"
+      ],
+      "url": "https://www.ymfla.org/scholarships"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
@@ -342,6 +288,44 @@
         "firstgen"
       ],
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
+    },
+    {
+      "name": "Kansas Teachers Scholarship Program",
+      "amount": "$2,500-$5,000",
+      "description": "Supports Kansas high school seniors planning to enter teaching professions in high-need areas.",
+      "sponsor": "Kansas Department of Education",
+      "deadline": "2027-04-01",
+      "tags": [
+        "kansas",
+        "merit"
+      ],
+      "url": "https://www.ksde.org/Default.aspx?tabid=144"
+    },
+    {
+      "name": "First Generation Scholarship - Sallie Mae",
+      "amount": "$2,500",
+      "description": "National scholarship for first-generation college students demonstrating financial need and academic potential.",
+      "sponsor": "Sallie Mae Fund",
+      "deadline": "2027-04-15",
+      "tags": [
+        "national",
+        "firstgen",
+        "need"
+      ],
+      "url": "https://www.salliemaefund.org/scholarships"
+    },
+    {
+      "name": "Horatio Alger Association Kansas Scholarships",
+      "amount": "$6,000-$25,000",
+      "description": "For Kansas students demonstrating integrity, perseverance, and financial need; supports underrepresented populations.",
+      "sponsor": "Horatio Alger Association",
+      "deadline": "2027-10-31",
+      "tags": [
+        "kansas",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.horatioalger.org/scholarships"
     }
   ]
 }
