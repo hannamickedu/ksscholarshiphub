@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T16:29:20.493363-05:00",
+  "last_updated": "2026-11-23T18:10:50.808212-05:00",
   "scholarships": [
     {
       "name": "Dell Scholars Program",
@@ -25,20 +25,6 @@
         "need"
       ],
       "url": "https://www.bkmclamorefoundation.org/apply"
-    },
-    {
-      "name": "Jack Kent Cooke Foundation Young Scholars Program",
-      "amount": "$2,000-$10,000",
-      "description": "Competitive scholarships for high-achieving, low-income high school students with demonstrated leadership and community service.",
-      "sponsor": "Jack Kent Cooke Foundation",
-      "deadline": "2026-12-15",
-      "tags": [
-        "national",
-        "need",
-        "merit",
-        "essay"
-      ],
-      "url": "https://www.jkcf.org/scholarships/young-scholars/"
     },
     {
       "name": "Scholly Scholarship Search",
@@ -77,6 +63,20 @@
       "url": "https://www.ronbrown.org/section/apply/program-description"
     },
     {
+      "name": "Jack Kent Cooke Foundation Scholarship",
+      "amount": "$40,000+",
+      "description": "Highly competitive national scholarship for high-achieving students with financial need, especially first-generation college students.",
+      "sponsor": "Jack Kent Cooke Foundation",
+      "deadline": "2027-01-13",
+      "tags": [
+        "national",
+        "firstgen",
+        "need",
+        "merit"
+      ],
+      "url": "https://www.jkcf.org/scholarships/cooke-scholarship/"
+    },
+    {
       "name": "KCUR Missouri Valley Journalism Scholarship",
       "amount": "$2,000",
       "description": "For Kansas and Missouri students pursuing journalism, communications, or media studies. Includes mentorship with KCUR public radio staff.",
@@ -113,17 +113,17 @@
       "url": "https://www.kgfa.org/"
     },
     {
-      "name": "FFA Foundation Scholarships",
-      "amount": "$1,000-$5,000",
-      "description": "Multiple scholarships available for FFA members pursuing agriculture, agribusiness, or agricultural education at accredited institutions.",
-      "sponsor": "National FFA Foundation",
+      "name": "FFA Scholarship Fund",
+      "amount": "$1,000-$15,000",
+      "description": "Scholarships for high school FFA members pursuing agriculture, agricultural business, or agricultural education. National program with strong Kansas participation.",
+      "sponsor": "National FFA Organization",
       "deadline": "2027-02-01",
       "tags": [
         "national",
-        "agriculture",
+        "stem",
         "merit"
       ],
-      "url": "https://www.ffa.org/the-amos-foundation/scholarships/"
+      "url": "https://www.ffa.org/scholarships/"
     },
     {
       "name": "Davidson Fellows Scholarship",
@@ -153,31 +153,16 @@
       "url": "https://www.hsf.net/scholarship"
     },
     {
-      "name": "Hispanic Scholarship Fund - Kansas Region",
-      "amount": "$500-$5,000",
-      "description": "Scholarships for Hispanic high school seniors in Kansas pursuing higher education, including first-generation college students.",
-      "sponsor": "Hispanic Scholarship Fund",
+      "name": "Kansas Future Teachers Scholarship",
+      "amount": "$2,000-$4,000",
+      "description": "Specifically for Kansas high school seniors committed to teaching careers in Kansas schools. Includes service obligation component.",
+      "sponsor": "Kansas Department of Education",
       "deadline": "2027-02-15",
       "tags": [
-        "national",
-        "firstgen",
-        "need",
+        "kansas",
         "merit"
       ],
-      "url": "https://www.hsf.net/apply"
-    },
-    {
-      "name": "National Association of Multicultural Engineering Program Professionals (NAMEPP) Scholarships",
-      "amount": "$1,000-$4,000",
-      "description": "Scholarships for underrepresented high school students pursuing engineering, technology, or STEM fields.",
-      "sponsor": "NAMEPP",
-      "deadline": "2027-02-20",
-      "tags": [
-        "national",
-        "stem",
-        "merit"
-      ],
-      "url": "https://www.namepp.org/scholarships"
+      "url": "https://ksde.org/Agency/Division-of-Learning-Services/Teacher-Licensure-and-Accreditation/Future-Teachers-Scholarship"
     },
     {
       "name": "Kansas City Royals Baseball Scholarship",
@@ -205,17 +190,16 @@
       "url": "https://sunflowerfoundation.org/"
     },
     {
-      "name": "Phi Theta Kappa Foundation Scholarships",
-      "amount": "$500-$2,500",
-      "description": "Scholarships for high-achieving high school students transferring to community or four-year colleges, emphasizing leadership and service.",
-      "sponsor": "Phi Theta Kappa Honor Society",
+      "name": "Armstrong Foundation Scholarship",
+      "amount": "$2,000-$5,000",
+      "description": "Kansas-based foundation supporting high school graduates pursuing higher education, with preference for rural Kansas students.",
+      "sponsor": "Armstrong Foundation",
       "deadline": "2027-02-28",
       "tags": [
-        "national",
-        "merit",
-        "essay"
+        "kansas",
+        "need"
       ],
-      "url": "https://www.ptk.org/scholarships"
+      "url": "https://www.armstrongfoundation.org/scholarships"
     },
     {
       "name": "Kansas Rural Water Association Scholarship",
@@ -230,18 +214,17 @@
       "url": "https://www.krwa.net/"
     },
     {
-      "name": "Horatio Alger Association Scholarship",
-      "amount": "$2,500-$12,500",
-      "description": "Scholarships for high school seniors who have overcome adversity and demonstrate financial need, strong academics, and community involvement.",
-      "sponsor": "Horatio Alger Association",
+      "name": "Kansas Health Care Association Scholarship",
+      "amount": "$1,000-$2,500",
+      "description": "For Kansas high school students planning careers in healthcare fields. Administered by KHCA with priority for rural area students.",
+      "sponsor": "Kansas Health Care Association",
       "deadline": "2027-03-01",
       "tags": [
-        "national",
-        "need",
-        "merit",
-        "essay"
+        "kansas",
+        "stem",
+        "need"
       ],
-      "url": "https://www.horatioalger.org/scholarship"
+      "url": "https://www.kahca.org/scholarships"
     },
     {
       "name": "Kansas Masonic Foundation Scholarship",
@@ -256,30 +239,29 @@
       "url": "https://kansasmasons.org/"
     },
     {
-      "name": "Kansas Farmers Union Scholarship",
-      "amount": "$500-$2,000",
-      "description": "Scholarships for Kansas high school seniors planning to attend Kansas colleges, with preference for agriculture-related fields and farm families.",
-      "sponsor": "Kansas Farmers Union",
+      "name": "Torch Award for Undergraduate Music Majors",
+      "amount": "$1,500",
+      "description": "National scholarship for music students pursuing performance or music education. Requires audition and essay component.",
+      "sponsor": "College Music Society",
       "deadline": "2027-03-15",
       "tags": [
-        "kansas",
-        "agriculture",
+        "national",
+        "arts",
         "merit"
       ],
-      "url": "https://www.kfu.org/scholarships"
+      "url": "https://www.collegmusicsoc.org/awards-grants/"
     },
     {
-      "name": "Kansas Medical Society Foundation Scholarship",
-      "amount": "$1,500-$3,000",
-      "description": "Scholarships for Kansas high school seniors pursuing pre-medicine, nursing, or other healthcare fields at accredited universities.",
-      "sponsor": "Kansas Medical Society Foundation",
+      "name": "Kansas Farm Bureau Scholarship",
+      "amount": "$500-$2,000",
+      "description": "For Kansas high school seniors with family connections to agriculture or rural communities. Merit-based with preference for Farm Bureau member families.",
+      "sponsor": "Kansas Farm Bureau",
       "deadline": "2027-03-31",
       "tags": [
         "kansas",
-        "stem",
         "merit"
       ],
-      "url": "https://www.kmed.org/foundation"
+      "url": "https://www.kfb.org/Public/Advocacy/Scholarships/Public/Advocacy/Scholarships.aspx"
     },
     {
       "name": "Kansas Ethnic Minority Scholarship",
@@ -295,17 +277,44 @@
       "url": "https://www.kansasregents.org/students/student_financial_aid/scholarships_and_grants"
     },
     {
-      "name": "Reardon-Smith Teacher Scholarship Program",
-      "amount": "$1,000-$3,000",
-      "description": "Scholarships for Kansas high school graduates pursuing teaching careers at Kansas universities, with emphasis on rural education.",
+      "name": "Kansas Board of Regents Scholarship Program",
+      "amount": "$500-$3,500",
+      "description": "Merit-based scholarship for Kansas residents attending Kansas public universities. Awards based on academic achievement and test scores.",
       "sponsor": "Kansas Board of Regents",
-      "deadline": "2027-04-01",
+      "deadline": "2027-04-15",
       "tags": [
         "kansas",
+        "merit"
+      ],
+      "url": "https://www.kansasregents.org/students/financial-aid/scholarships"
+    },
+    {
+      "name": "Sallie Mae Fund Scholarship",
+      "amount": "$500-$5,000",
+      "description": "For first-generation college students who demonstrate financial need and leadership qualities. Renewable up to four years.",
+      "sponsor": "Sallie Mae Fund",
+      "deadline": "2027-04-30",
+      "tags": [
+        "national",
+        "firstgen",
+        "need",
+        "essay"
+      ],
+      "url": "https://www.salliemaefund.org/scholarships"
+    },
+    {
+      "name": "Hispanic Heritage Foundation Scholarship",
+      "amount": "$1,000-$5,000",
+      "description": "National scholarship program for Hispanic/Latino high school seniors, including first-generation college students. Merit and need-based options.",
+      "sponsor": "Hispanic Heritage Foundation",
+      "deadline": "2027-04-30",
+      "tags": [
+        "national",
+        "firstgen",
         "merit",
         "essay"
       ],
-      "url": "https://www.kansasregents.org/students/financial-aid/scholarship-opportunities"
+      "url": "https://hispanicheritagesf.org/scholarships"
     }
   ]
 }
